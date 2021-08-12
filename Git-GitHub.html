@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GrupoSoftware</title>
+    <style>
+#main{
+    display:flex;
+
+}
+h4{color:green;}
+
+
+
+    </style>
+
+
+</head>
+<body>
+<h1>Grupo Software ITLA</h1>
+<br>
+
+
+<div id="main">
+    <div id="bloque1">
+        <h3>Git</h3>
+        <p>Repositorio de git quiere decir que es local.</p>
+        <p>Repositorio de GitHub quiere decir que es remoto.</p>
+        <pre>
+ <br>
+    <br>
+NOTA:  Estos comandos pueden ser ejecutados tanto como en el bash de
+    git como en el terminal de windows incluso en la terminal del IDE
+    de preferencia…
+
+    TENER EN CUENTA LOS PUNTOS DE LOS COMANDOOS Y LOS GUIONES Y DOBLE GUIONES.
+
+    CUANDO ESTE HABLANDO DE COMMIT me refiero a los archivos que ya se subieron……
+</pre>
+        <br>
+        <h3>Algunos comandos de configuración</h3>
+        <ul>
+            <li><span style=color:red;>git config –global user.email  “aqui pongo mi email”</></li>
+            <li><span style=color:red;>git config –global user.name “aquí pongo el username que quiero”</></li>
+            <li><span style=color:red;>git config –global -e</span> esto es para saber que correo se está utilizando
+            </li>
+            <li><span style=color:red;>git config –global –l  </span> lo mismo que el de arriba</li>
+            <li><span style=color:red;>git config –list </span> un listado de la configuración que tiene git</li>
+        </ul>
+        <h3>Carpetas</h3>
+        <ul>
+            <li><span style=color:red;>cd + nombre</span> Para cambiar de directorio</li>
+            <li><span style=color:red;>mkdir + nombre </span> Para crear una carpeta</li>
+            <li><span style=color:red;>rmdir + nombre</span> Para eliminar una carpeta</li>
+            <li><span style=color:red;>touch + nombre </span> Para crear archivos</li>
+        </ul>
+        <pre>
+  NOTA: RECORDAR SIEMPRE MOVERTE PRIMERO AL DIRECTORIO QUE QUIERES HACER LA
+    SIGUIENTES ACCCIONES YA SEA CREAR BORRAR ETC….
+</pre>
+        <br>
+        <h3>Cosas</h3>
+        <p><span style=color:red;>control + L</span> limpiar consola o también escribir cls</p>
+
+
+    </div>
+
+    <div id="bloque2">
+        <h3>Comandos importantes GIT</h3>
+        <ul>
+            <li><span style=color:red;>git init</span> para iniciar repositorio local ------ importante este comando
+                este por lo general lo inicias dentro de la carpeta de tu proyecto…
+            </li>
+            <li><span style=color:red;>git status</span> para saber los estados de los archivos AQUÍ PUEDES VER QUE
+                ARCHIVOS
+                ESTAN LISTOS PARA SUBIR Y CUALES NO también puedes ver que archivos se modificaron etc.….
+            </li>
+            <h4>¡¡¡¡AQUÍ PREPARANDO LA COMIDA!!!! ¡¡¡PREPARANDO ARCHIVOS!!! ESTOS 2 COMANDO SIGUIENTES</h4>
+            <li><span style=color:red;>git add + nombre DE ARCHIVO</span> para agregar el archivo OJO ESTE COMANDO NO
+                VA SUBIR EL ARCHIVO AUN SOLO LO PREPARA
+            </li>
+            <li><span style=color:red;>git add .</span> para subir todos los archivos juntos OJO ESTE COMANDO NO VA
+                SUBIR lOS ARCHIVOS AUN SOLO LOS PREPARA
+            </li>
+            <h4>AQUÍ YA SI TA LISTA PARA COMERMELA……. COMANDO SIGUIENTE SUBIENDO ARCHIVOS</h4>
+            <li> <span style=color:red;>git commit -m “aquí pones alguna descripción del cambio que has hecho es opcional, pero es recomendado para indicarle a
+        tus compañeros de trabajo los cambios que has realizado”</span></li>
+            <h4>Este comando ya empaqueta todos los archivos PREPARADOS para subir y los envía.</h4>
+            <h4>Nota: un dato importante cada cambio que hagamos a ese archivo ya subido en el repositorio
+                Debemos volver hacer un commit para actualizar esos cambios que hicimos.
+                .</h4>
+
+        </ul>
+        <pre>
+Ojo:
+ESTE COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS
+SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...
+
+    <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit….. ese último cambio que subiste va desaparecer.
+
+<span style=color:red;>git log</span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
+para saber quién fue el criminal que jodio la vaina.
+
+Un dato hay una forma de acceder al commit de otra persona o a tu propio commit que hiciste en el pasado etc
+    Primero ejecutas el  <span style=color:red;>git log</span> y veras al lado de la palabra ‘commit’ un texto largo con números y letras lo copias
+    luego ejecutas  <span style=color:red;>git checkout</span> + el texto que copiaste y guala estarás en ese commit….
+
+    <span style=color:red;>git diff</span> este comando lo podemos usar cuando hacemos un cambio en el archivo que ya subimos por ejemplo que escribamos
+    una nueva línea de código con este comando nos dirá exactamente que escribimos
+    y donde.Hay algunos ide como pycharm que cada cambio que hagas el archivo
+    cambia de color azul indicándote que estas modificando este archivo.
+
+    <span style=color:red;>git reset HEAD + NOMBRE DE ARCHIVO </span>    este comando nos permite quitar un archivo de
+    la preparación OJO ósea quita un archivo de los archivos que están esperando SER
+    comidos no de lo que ya están en la barriga….
+
+
+</pre>
+        <pre>
+    <h4>Datos importantes GITHUB</h4>
+
+*Recordar hacer una cuenta en GitHub
+*Luego pueden darle a new para crear repositorio
+*Cada repositorio tiene una dirección especifica que utilizaremos para sincronizar el repositorio local con el remoto parecida a esta
+*https://github.com/nombreusario/nombrerepositorio.git
+
+<h4>También podemos hacer un repositorio desde la consola</h4>
+    <ol>
+        <li>Creamos el repositorio git init</li>
+        <li>Agregamos los archivos que queramos, por ejemplo
+git add README.md</li>
+        <li>Hacemos comit git comit -m “primer comit”</li>
+        <li>git remote add origin https://github.com/nombreusario/nombrerepositorio.git</li>
+        <li>git push -u origin master</li>
+    </ol>
+
+Rama o branch la principal es la master, pero también le podemos cambiar el nombre
+
+    <span style="color:red;">git branch</span> Para saber los tipos de ramas o Branch que tenemos
+    los Branch son prácticamente como una carpeta padre donde contiene los archivos de un proyecto
+
+
+</pre>
+        <pre>
+        <h4>PASOS PARA HACER PUSH desde el repositorio local al remoto DESDE EL COMAND LINE</h4>
+ <p>Ojo este paso es si ya tenemos creado el repositorio y con sus archivos listos para subir</p>
+
+<span style="color:red;">git remote add origin https://github.com/nombreusuario/nombrerepositorio.git</span>
+Aquí ya estamos sincronizando con el repositorio remoto
+
+NOTA: les saldrá una ventana para verificar que eres tú.
+
+    <span style="color:red;">git Branch -M main</span>
+
+    <span style="color:red;">git push -u origin main</span> aquí ya estamos diciendo ok ya envía mi repositorio local al remoto
+
+
+    </pre>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
