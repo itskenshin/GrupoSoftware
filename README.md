@@ -3,5 +3,5 @@
 
 <a href="https://t.me/joinchat/nGwiABFevdpiZWQx">
   <img align="left" alt="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/telegram.svg" />
-</a>
+</a> ** Nuestro Grupo Telegram
 
