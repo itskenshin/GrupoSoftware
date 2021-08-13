@@ -84,7 +84,8 @@ NOTA:  Estos comandos pueden ser ejecutados tanto como en el bash de
                 SUBIR lOS ARCHIVOS AUN SOLO LOS PREPARA
             </li>
             <h4>AQUÍ YA SI TA LISTA PARA COMERMELA……. COMANDO SIGUIENTE SUBIENDO ARCHIVOS</h4>
-            <li> <span style=color:red;>git commit -m “aquí pones alguna descripción del cambio que has hecho es opcional, pero es recomendado para indicarle a
+            <li> <span style=color:red;>git commit -m “aquí pones alguna descripción del cambio que has hecho es
+                opcional, pero es recomendado para indicarle a
         tus compañeros de trabajo los cambios que has realizado”</span></li>
             <h4>Este comando ya empaqueta todos los archivos PREPARADOS para subir y los envía.</h4>
             <h4>Nota: un dato importante cada cambio que hagamos a ese archivo ya subido en el repositorio
@@ -97,7 +98,8 @@ Ojo:
 ESTE COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS
 SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...
 
-    <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit….. ese último cambio que subiste va desaparecer.
+    <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit…..
+            ese último cambio que subiste va desaparecer.
 
 <span style=color:red;>git log</span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
 para saber quién fue el criminal que jodio la vaina.
@@ -119,6 +121,18 @@ Un dato hay una forma de acceder al commit de otra persona o a tu propio commit 
 </pre>
         <pre>
     <h3>Datos importantes GITHUB</h3>
+            <span style="color:red;">Pull Request</span> quiere decir cuando alguien que no esta en tu grupo de colaboracion
+            quiere participar o agregar o modificar algo y luego se decide o no si esos cambios que hizo esa
+            persona quiero aceptarlos.
+
+            <span style="color:red;">Fork</span> quiere decir que vas hacer una copia de un repositorio por ejemplo de otra persona
+            y quieres experimentar con esa informacion ojo los cambios que hagas en esa copia no se
+            va modificar en la original de esa persona a menos que hagas un pull request y esperes su aprobacion.
+
+            <span style="color:red;">Nota: Podemos crear un archivo llamado .gitignore y aqui espeficar los nombres
+                de los archivos que no quiero subir a github esto es importante ya que hay veces
+            que vamos a querer no subir archivos con informacion privadas ya sea api keys etc...
+            normalmente cuando creas un repositorio en el proyecto se crea un archivo gitignore</span>
 
 *Recordar hacer una cuenta en GitHub
 *Luego pueden darle a new para crear repositorio
@@ -127,14 +141,14 @@ Un dato hay una forma de acceder al commit de otra persona o a tu propio commit 
 
 <h4>También podemos hacer un repositorio desde la consola</h4>
     <ol>
-        <li>Creamos el repositorio git init</li>
+        <li>Creamos el repositorio <span style="color:red;">git init</span></li>
         <li>Agregamos los archivos que queramos, por ejemplo
-git add README.md</li>
-        <li>Hacemos comit git comit -m “primer comit”</li>
-        <li>git remote add origin https://github.com/nombreusario/nombrerepositorio.git</li>
+<span style="color:red;">git add README.md</span></li>
+        <li>Hacemos comit <span style="color:red;">git comit -m “primer comit”</span></li>
+        <li><span style="color:red;">git remote add origin https://github.com/nombreusario/nombrerepositorio.git</li>
         origin puede ser cualquier cosa pueden darle su propio nombre es como si le estuvieramos dando un nombre
         al repositorio local
-        <li>git push -u origin master</li>
+        <li><span style="color:red;">git push -u origin master</li>
     </ol>
 <h3>Ramas o Branch</h3>
 Rama o branch la principal es la master, pero también le podemos cambiar el nombre
@@ -151,6 +165,8 @@ Rama o branch la principal es la master, pero también le podemos cambiar el nom
 
     <span style="color:red;">git merge + nombre de ese branch</span> para fucionar la rama activa con la deseada.
 
+    <span style="color:red;">git branch -d + nombre de ese branch</span> elimina el branch especifico.
+
 </pre>
         <pre>
         <h4>PASOS PARA HACER PUSH desde el repositorio local al remoto DESDE EL COMAND LINE</h4>
@@ -163,11 +179,26 @@ NOTA: les saldrá una ventana para verificar que eres tú.
 
     <span style="color:red;">git Branch -M main</span>
 
-    <span style="color:red;">git push -u origin main -f</span> aquí ya estamos diciendo ok ya envía mi repositorio local al remoto
+    <span style="color:red;">git push -u origin main -f</span> aquí ya estamos diciendo ok ya envía mi repositorio
+            local al remoto
 
             A veces tendremos que forzar el push aunque no es recomendado con -f
 
     </pre>
+        <pre>
+            <h3>Pull</h3>
+
+            <span style="color:red;">git pull origin main</span> para traer los cambios realizados
+            que se hicieron en el repositorio o en github.
+
+
+
+
+
+
+        </pre>
+
+
 
 
     </div>
