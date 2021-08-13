@@ -132,9 +132,11 @@ Un dato hay una forma de acceder al commit de otra persona o a tu propio commit 
 git add README.md</li>
         <li>Hacemos comit git comit -m “primer comit”</li>
         <li>git remote add origin https://github.com/nombreusario/nombrerepositorio.git</li>
+        origin puede ser cualquier cosa pueden darle su propio nombre es como si le estuvieramos dando un nombre
+        al repositorio local
         <li>git push -u origin master</li>
     </ol>
-
+<h3>Ramas o Branch</h3>
 Rama o branch la principal es la master, pero también le podemos cambiar el nombre
 
     <span style="color:red;">git branch</span> Para saber los tipos de ramas o Branch que tenemos
@@ -144,6 +146,11 @@ Rama o branch la principal es la master, pero también le podemos cambiar el nom
     <span style="color:red;">git branch + nombre </span> Crea un nuevo branch o rama.
 
     <span style="color:red;">git checkout + nombre </span> Accedo a esa rama.
+
+    <span style="color:red;">ls</span> para ver los archivos que tiene esa rama.
+
+    <span style="color:red;">git merge + nombre de ese branch</span> para fucionar la rama activa con la deseada.
+
 </pre>
         <pre>
         <h4>PASOS PARA HACER PUSH desde el repositorio local al remoto DESDE EL COMAND LINE</h4>
@@ -156,7 +163,7 @@ NOTA: les saldrá una ventana para verificar que eres tú.
 
     <span style="color:red;">git Branch -M main</span>
 
-    <span style="color:red;">git push -u origin main</span> aquí ya estamos diciendo ok ya envía mi repositorio local al remoto
+    <span style="color:red;">git push -u origin main -f</span> aquí ya estamos diciendo ok ya envía mi repositorio local al remoto
 
             A veces tendremos que forzar el push aunque no es recomendado con -f
 
