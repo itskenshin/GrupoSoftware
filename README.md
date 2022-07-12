@@ -6,3 +6,9 @@
   <img align="left" alt="Telegram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/telegram.svg" />
 </a> Nuestro Grupo Telegram
 
+Listado de colaboradores
+Jonathan Montero
+Isael Diroche
+bash: :wq: command not found
+bash: :qw: command not found
+
