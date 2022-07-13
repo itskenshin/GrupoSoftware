@@ -8,6 +8,8 @@
 
 body{
     font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 100;
     color: white;
     background: #030011;
 } 
@@ -16,7 +18,6 @@ body{
 header{
     width: calc(100vw -0px);
     height: 100px;
-
     outline: solid 2px white;
 }
 
@@ -47,17 +48,19 @@ main{
     }
 
     main .contenedor-principal article{
+        margin: 60px 0;
         padding: 0 40px;
         width: 80%; 
         text-align: justify;
-
+        
         /* remember to delete */
-        /* background-color: red; */
+        /* border: solid 2px white;
+        background-color: red; */
     }
 
     main .contenedor-principal .principal-title{
         margin: 50px 0;
-        color: rgb(238, 255, 162);
+        color: #504C5A;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
@@ -94,34 +97,50 @@ main{
 
     } */
 
-    .bloque1 ul li span{
+    .bloque ul li span{
         color:white;
     }
 
-    .bloque1 li{
+    .bloque li{
         list-style: none;
     }
 
-    .bloque1 li::before{
+    .bloque li::before{
         content:"$";
         color:white;
         margin-right:8px;
     } */
 
 
-    .bloque1 h3{
+    .bloque h3{
         font-size: 22px;
     }
 
-/* ________________________________________________________________________________ 
+/* ________________________________________________________________________________ */
 footer{
+    height: 200px;
 
-}*/
+    background-color: blue;
+}
+
+.aside-class{
+    padding: 20px 10px;
+    height: 80vh;
 
 
+    /* remember to delete */
+    background-color: #504C5A;
+}
 
-/* 
-li::before{
-	content:"$";
-	margin-right:8px;
-} */
+    .aside-class ul li {
+        margin: 5px 0;
+        list-style: none;
+    }
+
+        .aside-class ul li a{
+            color: #fff;
+        }
+
+        .aside-class ul li a:hover{
+            color: rgb(0, 0, 66);
+        }
