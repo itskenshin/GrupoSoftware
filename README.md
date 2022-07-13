@@ -2,9 +2,12 @@
 <i>En este repositorio pueden subir archivos sobre algun aporte que quieran hacer en general</i>
 
 <b>"Asi que sientanse libres y no se pasen coño"</b> <br><br>
+
+<img align="absmiddle" alt="Telegram" src="./gruposoftware/css/images/tele.png"/>
 <a src="https://t.me/+Rnl6Z53r9PxiMzNh">
-    <img align="absmiddle" alt="Telegram" src="./gruposoftware/css/images/tele.png"/> <b>Grupo de telegram</b>
+    <b>Grupo de telegram</b>
 </a>
+
 <hr>
 <br>
 <h2>Web Git-GitHub</h2>
