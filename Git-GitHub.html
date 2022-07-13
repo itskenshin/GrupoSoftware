@@ -72,64 +72,103 @@
                     <br>
                     <h3>Cosas</h3>
                     <p><span style=color:red;>control + L</span> limpiar consola o también escribir <span style=color:red;>clear</span></p>
+                    <p><span style=color:red;>control + C</span> para salir del programa</p>
+                    <p><span style=color:red;>control + Z</span> para pausar el programa</p>
+                    <p><span style=color:red;>control + R</span> para reanudar el programa</p>
+                    <p><span style=color:red;>control + D</span> para eliminar el archivo</p>
+                    <p><span style=color:red;>control + F</span> para buscar un archivo</p>
+                    <p><span style=color:red;>control + S</span> para guardar el archivo</p>
+                    <p><span style=color:red;>control + O</span> para abrir un archivo</p>
+                    <p><span style=color:red;>ls</span> lista todos los archivos de la carpeta</p>
+                    <p><span style=color:red;>ls -a</span> lista todos los archivos de la carpeta con los archivos ocultos</p>
 
                 
                 </div>
-
+                <br>
                 <div class="bloque bloque2">
                     <h3 id="github">Comandos importantes GIT</h3>
                     <ul>
                         <li><span style=color:red;>git init</span> para iniciar repositorio local ------ importante este comando
                             este por lo general lo inicias dentro de la carpeta de tu proyecto…
                         </li>
+                        <br>
+                        <li><span style=color:red;>git clone "Nombre_del_repositorio"</span> clona el repositorio y lo configura como remoto.</li>
+
+                        <br>
                         <li><span style=color:red;>git status</span> para saber los estados de los archivos AQUÍ PUEDES VER QUE
                             ARCHIVOS
                             ESTAN LISTOS PARA SUBIR Y CUALES NO también puedes ver que archivos se modificaron etc.….
                         </li>
-                        <h4>¡¡¡¡AQUÍ PREPARANDO LA COMIDA!!!! ¡¡¡PREPARANDO ARCHIVOS!!! ESTOS 2 COMANDO SIGUIENTES</h4>
+                        <br>
+                        <h4>¡¡¡¡AQUÍ PREPARANDO LA COMIDA!!!! ¡¡¡PREPARANDO ARCHIVOS!!! ESTOS 2 COMANDO SIGUIENTES</h4> <br>
                         <li><span style=color:red;>git add + nombre DE ARCHIVO</span> para agregar el archivo OJO ESTE COMANDO NO
                             VA SUBIR EL ARCHIVO AUN SOLO LO PREPARA
                         </li>
+                        <br>
                         <li><span style=color:red;>git add .</span> para subir todos los archivos juntos OJO ESTE COMANDO NO VA
                             SUBIR lOS ARCHIVOS AUN SOLO LOS PREPARA
                         </li>
-                        <h4>AQUÍ YA SI TA LISTA PARA COMERMELA……. COMANDO SIGUIENTE SUBIENDO ARCHIVOS</h4>
-                        <li> <span style=color:red;>git commit -m “aquí pones alguna descripción del cambio que has hecho es
-                            opcional, pero es recomendado para indicarle a
-                            tus compañeros de trabajo los cambios que has realizado”</span></li>
                         <br>
-                        <span>Este comando ya empaqueta todos los archivos PREPARADOS para subir y los envía al repositorio local.</span>
+                        <h4>AQUÍ YA SI TA LISTA PARA COMERMELA……. COMANDO SIGUIENTE SUBIENDO ARCHIVOS</h4> <br>
+                        <li> <span style=color:red;>git commit -m “aquí pones alguna descripción"</span> aqui va subir los archivos preparados (staged) al repositorio local -m significa para agregarle un mensaje es recomendable para que tu y tus compañeros sepan de que trata.</li>
+                        <br>
+                        <li><span style=color:red;>git commit -am "mensaje aqui"</span> Es un atajo para haccer un git add + mensaje todo combinado pero tener en cuenta que solo funciona con archivos modificados no con archivos nuevos.</li>
+                        <br>
+                        <span>Commit comando ya empaqueta todos los archivos PREPARADOS para subir y los envía al repositorio local.</span>
                         <span>Nota: un dato importante cada cambio que hagamos a ese archivo ya subido en el repositorio
-                            Debemos volver hacer un commit para actualizar esos cambios que hicimos.
+                            Debemos volver hacer un commit para actualizar esos cambios que hicimos. 
                         </span>
-
+                    
+                        
+                        <br>
+                        <br>
+                        <li> <span style=color:red;>git remote add origin "Nombre_del_repositorio"</span> Aqui estoy agregando la referencia del repositorio remoto origin es un alias que le estamos dando para luego usarla en el push.</li>
+                        <br>
+                        <li> <span style=color:red;>git push origin main</span> Aqui estoy subiendo los archivos al repositorio remoto (origin) es el alias que le dimos a la referenia y 
+                            (main) es el nombre de la rama que vamos a subir los cambios.</li>
+                        <br>
+                        <li> <span style=color:red;>git push -u origin</span> con el -u es un atajo para no volver a poner origin main.</li>
                     </ul>
 
                     <pre>
-                        <p>Ojo: <br>ESTE COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS <br>SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...</p>
+                        <p>Ojo: <br>ESTOS COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS <br>SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...</p>
                     </pre>
 
                     <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit…..
                     ese último cambio que subiste va desaparecer.
-
+                    <br>
+                    <br>
                     <span style=color:red;>git log</span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
                     para saber quién fue el criminal que jodio la vaina.
+                    <br>
+                    <br>
 
                     Un dato hay una forma de acceder al commit de otra persona o a tu propio commit que hiciste en el pasado etc
                     Primero ejecutas el  <span style=color:red;>git log</span> y veras al lado de la palabra ‘commit’ un texto largo con números y letras lo copias
                     luego ejecutas  <span style=color:red;>git checkout</span> + el texto que copiaste y guala estarás en ese commit….
+                    <br>
+                    <br>
 
                     <span style=color:red;>git diff</span> este comando lo podemos usar cuando hacemos un cambio en el archivo que ya subimos por ejemplo que escribamos
                     una nueva línea de código con este comando nos dirá exactamente que escribimos
                     y donde.Hay algunos ide como pycharm que cada cambio que hagas el archivo
-                    cambia de color azul indicándote que estas modificando este archivo.
+                    cambia de color azul indicándote que estas modificando este archivo tambien lo podemos usar para comparar entre dos ramas.
+                    <br>
+                    <br>
 
-                    <span style=color:red;>git reset HEAD + NOMBRE DE ARCHIVO </span>    este comando nos permite quitar un archivo de
-                    la preparación OJO ósea quita un archivo de los archivos que están esperando SER
-                    comidos no de lo que ya están en la barriga….
+                    <span style=color:red;>git reset HEAD + NOMBRE DE ARCHIVO </span> quita el ultimo commit del archivo especifico como un rollback pero no lo borra del repositorio local.
                     <br>
                     <br>
+                    <span style=color:red;>git reset HEAD~1 + NOMBRE DE ARCHIVO</span> es parecido lo mismo que el anterior pero es un atajo para decir el ultimo commit.
                     <span>
+                        <br>
+                        <br>
+                        <span style=color:red;>git reset</span> quita los archivos que estan en staged en preparacion para subir.
+                        <br>
+                        <br>
+                        <span style=color:red;>git reset "nombre_archivo"</span> lo mismo pero para un archivo especifico..
+                        <br>
+                        <br>
                         <h2>Datos importantes GITHUB</h2>
                         <br>
 
@@ -205,7 +244,7 @@
 
                     
                     <h3>Pull</h3>
-                    <p><span>git pull origin main</span> para traer los cambios realizados que se hicieron en el repositorio o en github.</p>
+                    <p><span>git pull origin main</span> para traer los cambios realizados de esa rama especifica que se hicieron en el repositorio o en github.</p>
 
                 </div>
 
@@ -232,7 +271,7 @@
 
     <footer>
         <span>Hecho por el grupo de software</span>
-        <img src="#" alt="#">
+        <img src="" alt="#">
 
         ITLA
     </footer>
