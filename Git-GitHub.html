@@ -128,16 +128,19 @@
                             (main) es el nombre de la rama que vamos a subir los cambios.</li>
                         <br>
                         <li> <span style=color:red;>git push -u origin</span> con el -u es un atajo para no volver a poner origin main.</li>
+                        <br>
+                        <li> <span style=color:red;>git remote -v</span> para ver los repos remoto</li>
+                        <br>
+                        <li> <span style=color:red;>git --version</span> para saber la version git.</li>
+                        <br>
+                        <li> <span style=color:red;>git pull origin main </span> me va traer los cambios del remote a mi repositorio.</li>
                     </ul>
 
                     <pre>
                         <p>Ojo: <br>ESTOS COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS <br>SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...</p>
                     </pre>
 
-                    <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit…..
-                    ese último cambio que subiste va desaparecer.
-                    <br>
-                    <br>
+                    
                     <span style=color:red;>git log</span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
                     para saber quién fue el criminal que jodio la vaina.
                     <br>
@@ -159,14 +162,17 @@
                     <span style=color:red;>git reset HEAD + NOMBRE DE ARCHIVO </span> quita el ultimo commit del archivo especifico como un rollback pero no lo borra del repositorio local.
                     <br>
                     <br>
-                    <span style=color:red;>git reset HEAD~1 + NOMBRE DE ARCHIVO</span> es parecido lo mismo que el anterior pero es un atajo para decir el ultimo commit.
+                    <span style=color:red;>git reset HEAD~1</span> es parecido lo mismo que el anterior pero es un atajo para decir el ultimo commit.
                     <span>
                         <br>
                         <br>
-                        <span style=color:red;>git reset</span> quita los archivos que estan en staged en preparacion para subir.
+                        <span style=color:red;>git reset</span> quita los archivos que estan en staged en preparacion para subir tambien podemos pasarle el hashcode con git log el hashcode es una numeracion que nos da el comando git log lo cual nos da informacion de los commit y cada commit tiene su hascode.
                         <br>
                         <br>
                         <span style=color:red;>git reset "nombre_archivo"</span> lo mismo pero para un archivo especifico..
+                        <br>
+                        <br>
+                        <span style=color:red;>git reset --hard </span> es para borrar todos los cambios que hiciste en el repositorio local y los borra podemos usar un git log para buscar el hashcode para hacer un rollback especifico peligro con este!!.
                         <br>
                         <br>
                         <h2>Datos importantes GITHUB</h2>
@@ -175,16 +181,19 @@
                         <p><span>Pull Request</span> quiere decir cuando alguien que no esta en tu grupo de colaboracion
                         quiere participar o agregar o modificar algo y luego se decide o no si esos cambios que hizo esa
                         persona quiero aceptarlos.</p>
-
+                        <br>
+                        
                         <span>Fork</span> quiere decir que vas hacer una copia de un repositorio por ejemplo de otra persona
                         y quieres experimentar con esa informacion ojo los cambios que hagas en esa copia no se
                         va modificar en la original de esa persona a menos que hagas un pull request y esperes su aprobacion.
-
+                        <br>
+                        <br>
                         <span>Nota: Podemos crear un archivo llamado .gitignore y aqui espeficar los nombres
                             de los archivos que no quiero subir a github esto es importante ya que hay veces
                         que vamos a querer no subir archivos con informacion privadas ya sea api keys etc...
                         normalmente cuando creas un repositorio en el proyecto se crea un archivo gitignore</span>
-
+                        <br>
+                        <br>
                         <li>Recordar hacer una cuenta en GitHub</li>
                         <li>Luego pueden darle a new para crear repositorio</li>
                         <li>Cada repositorio tiene una dirección especifica que utilizaremos para sincronizar el repositorio local con el remoto parecida a esta</li>
@@ -222,6 +231,7 @@
                             <li><span>git branch</span> Para saber los tipos de ramas o Branch que tenemos
                         los Branch son prácticamente como una carpeta padre donde contiene los archivos de un proyecto</li>
                             <li><span>git branch + nombre </span> Crea un nuevo branch o rama.</li>
+                            <li><span>git checkout -b nombre</span> Crea un nuevo branch o rama y lo pone como el branch actual.</li>
                             <li><span>git checkout + nombre </span> Accedo a esa rama.</li>
                             <li><span>ls</span> para ver los archivos que tiene esa rama.</li>
                             <li><span>git merge + nombre de ese branch</span> para fucionar la rama activa con la deseada.</li>
@@ -243,8 +253,7 @@
                     </pre>
 
                     
-                    <h3>Pull</h3>
-                    <p><span>git pull origin main</span> para traer los cambios realizados de esa rama especifica que se hicieron en el repositorio o en github.</p>
+                    
 
                 </div>
 
