@@ -12,3 +12,116 @@ body{
     background: #030011;
 } 
 
+/* ________________________________________________________________________________ */
+header{
+    width: calc(100vw -0px);
+    height: 100px;
+
+    outline: solid 2px white;
+}
+
+    header .header-menu{
+        display: flex;
+        align-items: center;
+    }
+
+        header .header-menu img{
+            margin: 0 10px;
+        }
+        
+/* ________________________________________________________________________________ */
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+    main .contenedor-principal{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        text-align: center;
+
+        /* remember to delete */
+        /* background-color: blue; */
+    }
+
+    main .contenedor-principal article{
+        padding: 0 40px;
+        width: 80%; 
+        text-align: justify;
+
+        /* remember to delete */
+        /* background-color: red; */
+    }
+
+    main .contenedor-principal .principal-title{
+        margin: 50px 0;
+        color: rgb(238, 255, 162);
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+/* .bloque1{
+
+} */
+    .bloque ul{
+        font-family: 'Roboto Mono';
+        font-weight: 300;
+        font-size: 14px;
+        margin: 15px 0;
+        padding: 10px 20px;
+        border: 2px solid rgba(128, 128, 128, 0.253);
+        border-radius: 5px;
+
+        color: yellow;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .bloque1 pre{
+        padding: 10px 20px;
+        border: 2px solid rgba(128, 128, 128, 0.253);
+        border-radius: 5px;
+
+        color: yellow;
+        background-color: rgb(0, 0, 0);
+    }
+
+    /* .bloque1{
+
+    } */
+
+    .bloque1 ul li span{
+        color:white;
+    }
+
+    .bloque1 li{
+        list-style: none;
+    }
+
+    .bloque1 li::before{
+        content:"$";
+        color:white;
+        margin-right:8px;
+    } */
+
+
+    .bloque1 h3{
+        font-size: 22px;
+    }
+
+/* ________________________________________________________________________________ 
+footer{
+
+}*/
+
+
+
+/* 
+li::before{
+	content:"$";
+	margin-right:8px;
+} */
