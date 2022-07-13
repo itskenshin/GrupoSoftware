@@ -3,12 +3,7 @@
 
 <b>"Asi que sientanse libres y no se pasen coño"</b> <br><br>
 <a src="https://t.me/+Rnl6Z53r9PxiMzNh">
-<button>
-<br>
-    <img align="absmiddle" alt="Telegram" src="./gruposoftware/css/images/tele.png"/>
-    **Grupo de Telegram**
-
-</button>
+    <img align="absmiddle" alt="Telegram" src="./gruposoftware/css/images/tele.png"/> <b>Grupo de telegram</b>
 </a>
 <hr>
 <br>
