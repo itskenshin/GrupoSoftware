@@ -35,6 +35,10 @@
         <td><img src="./GrupoSoftware/css/images/contributors/jonathan pic.png" alt="#" align="absmiddle"></td>
         <td>▸ Jonathan Montero</td>
     </tr>
+    <tr>
+        <td><img src="./GrupoSoftware/css/images/contributors/cristian pic.png" alt="#" align="absmiddle"></td>
+        <td>▸ Cristian Tejeda (disque hiso alguito)</td>
+    </tr>
 
     
 </table>
