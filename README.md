@@ -6,6 +6,7 @@
 <button>
 <br>
     <img align="absmiddle" alt="Telegram" src="./gruposoftware/css/images/tele.png"/>
+    
     **Grupo de Telegram**
 
 </button>
@@ -36,6 +37,10 @@
     <tr>
         <td><img src="./GrupoSoftware/css/images/contributors/jonathan pic.png" alt="#" align="absmiddle"></td>
         <td>▸ Jonathan Montero</td>
+    </tr>
+    <tr>
+        <td><img src="./GrupoSoftware/css/images/contributors/haroldy pic.png" alt="#" align="absmiddle"></td>
+        <td>▸ Haroldy se acerco bastante xD</td>
     </tr>
 
     
