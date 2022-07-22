@@ -39,6 +39,10 @@
         <td><img src="./GrupoSoftware/css/images/contributors/cristian pic.png" alt="#" align="absmiddle"></td>
         <td>▸ Cristian Tejeda (disque hiso alguito)</td>
     </tr>
+    <tr>
+        <td><img src="./GrupoSoftware/css/images/contributors/haroldy pic.png" alt="#" align="absmiddle"></td>
+        <td>▸ Haroldy Martinez (se acerco bastante)</td>
+    </tr>
 
     
 </table>
