@@ -19,6 +19,8 @@ header{
     width: calc(100vw -0px);
     height: 100px;
     outline: solid 2px white;
+    background: #0c0820;
+
 }
 
     header .header-menu{
@@ -68,6 +70,10 @@ main{
         line-height: 56px;
     }
 
+    h2, h3 {
+        margin-top: 50px;
+    }
+
 /* .bloque1{
 
 } */
@@ -76,26 +82,24 @@ main{
         font-weight: 300;
         font-size: 14px;
         margin: 15px 0;
-        padding: 10px 20px;
-        border: 2px solid rgba(128, 128, 128, 0.253);
-        border-radius: 5px;
-
+        padding: 20px 30px;
+        border: 3px solid rgba(104, 104, 104, 0.253);
+        border-radius: 10px;
         color: yellow;
         background-color: rgb(0, 0, 0);
     }
 
     .bloque1 pre{
         padding: 10px 20px;
-        border: 2px solid rgba(128, 128, 128, 0.253);
+        border: 3px solid rgba(128, 128, 128, 0.253);
         border-radius: 5px;
-
         color: yellow;
         background-color: rgb(0, 0, 0);
     }
 
-    /* .bloque1{
+/* .bloque1{
 
-    } */
+} */
 
     .bloque ul li span{
         color:white;
@@ -118,18 +122,23 @@ main{
 
 /* ________________________________________________________________________________ */
 footer{
-    height: 200px;
-
-    background-color: blue;
+    height: 150px;
+    border-top: 3px solid white;
+    font-style: italic;
+    padding: 30px;
+    background: #0c0820;
 }
 
 .aside-class{
     padding: 20px 10px;
-    height: 80vh;
-
+    height: 60vh;
+    margin-top: 100px;
 
     /* remember to delete */
-    background-color: #504C5A;
+    background-color: #484150;
+    border: 4px solid rgb(10, 94, 10);
+    border-radius: 20px;
+    font-size: large;
 }
 
     .aside-class ul li {
@@ -139,8 +148,13 @@ footer{
 
         .aside-class ul li a{
             color: #fff;
+            text-decoration: none;
         }
 
         .aside-class ul li a:hover{
             color: rgb(0, 0, 66);
         }
+
+    .aside-class h3 {
+        margin-top: 20px;
+    }
