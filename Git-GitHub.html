@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>GrupoSoftware</title>
     <link rel="stylesheet" href="./GrupoSoftware/css/Git-Github-style.css">
-
+    <link rel="shortcut icon" href="./GrupoSoftware/css/images/group_icon.png">
 </head>
 
 <body>
 
     <header>
         <!-- Menu de navegacion -->
-        <nav class="header-menu">
+        <nav class="header-menu" id="home">
             
             <a href="#"><img src="./GrupoSoftware/css/images/group_icon.png" alt="#"></a>
             <h1>Grupo Software ITLA</h1>  
@@ -26,7 +26,7 @@
 
             <article>
 
-                <h1 class="principal-title">Git / Github <img width="50" align="absmiddle" src="./GrupoSoftware/css/images/git.png" alt="Git"> </h1>
+                <h1 class="principal-title" style="color: rgb(157, 156, 156);">Git / Github <img width="50" align="absmiddle" src="./GrupoSoftware/css/images/git.png" alt="Git"> </h1>
 
                 <div class="bloque bloque1">
                     <h2 id="git">Git</h2>
@@ -47,7 +47,7 @@
 
                     <br><br>
                     
-                    <h3>Algunos comandos de configuración</h3>
+                    <h3 id="comandos">Algunos comandos de configuración</h3>
                     <ul>
                         <li><span>git config –global user.email “aqui pongo mi email”</></li>
                         <li><span>git config –global user.name “aquí pongo el username que quiero”</></li>
@@ -173,7 +173,7 @@
                         <span style=color:red;>git reset --hard </span> es para borrar todos los cambios que hiciste en el repositorio local y los borra podemos usar un git log para buscar el hashcode para hacer un rollback especifico peligro con este!!.
                         <br><br><br>
 
-                        <h2>Datos importantes GITHUB</h2>
+                        <h2 id="datos_importantes">Datos importantes GITHUB</h2>
                         <br>
 
                         <p><span>Pull Request</span> quiere decir cuando alguien que no esta en tu grupo de colaboracion
@@ -260,24 +260,25 @@
             <!-- aside con el indice -->
             <aside class="aside-class" style="width: 20%; display: inline-block;">
 
-                <h3>Indice</h3>
+                <a href="#home"><h3>Indice</h3></a>
                 <br>
                 <hr>
                 <br>
-                <br>
                 <ul>
-                    <li><a href="#git">Git</a></li><br>
-                    <li><a href="#github">Datos importantes GITHUB</a></li><br>
+                    <li><a href="#git">Git definicion</a></li><br>
+                    <li><a href="#comandos">Comandos Basicos</a></li><br>
+                    <li><a href="#github">Comandos importantes GITHUB</a></li><br>
+                    <li><a href="#datos_importantes">Datos importantes GITHUB</a></li><br>
                     <li><a href="#ramas">Ramas o Branch</a></li><br>
                 </ul>
             </aside>
         </div>
     </main>
 
-    <footer>
+    <!--<footer>
         <span>Hecho por el grupo de software</span>
         ITLA
-    </footer>
+    </footer>-->
 
 </body>
 
