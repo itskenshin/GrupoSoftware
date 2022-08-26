@@ -1,1 +1,1 @@
-<?php header( 'Location: /Git-GitHub.html' ) ;  ?>
+<?php include_once("Git-GitHub.html"); ?>
