@@ -1,1 +1,1 @@
-<?php include_once("Git-GitHub.html"); ?>
+<?php include_once("index.html"); ?>

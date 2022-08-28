@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@200;400;600&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;600&family=Roboto:wght@100;400;700&display=swap');
 
-*{
+
+
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +20,6 @@ body{
     background: #011932;
 } 
 
-/* ________________________________________________________________________________ */
 header{
     width: calc(100vw -0px);
     height: 100px;
@@ -35,7 +36,6 @@ header{
             margin: 0 10px;
         }
         
-/* ________________________________________________________________________________ */
 main{
     display: flex;
     justify-content: center;
@@ -48,8 +48,7 @@ main{
         width: 80vw;
         text-align: center;
 
-        /* remember to delete */
-        /* background-color: blue; */
+  
     }
 
     main .contenedor-principal article{
@@ -57,10 +56,7 @@ main{
         padding: 0 40px;
         width: 80%; 
         text-align: justify;
-        
-        /* remember to delete */
-        /* border: solid 2px white;
-        background-color: red; */
+      
     }
 
     main .contenedor-principal .principal-title{
@@ -73,9 +69,6 @@ main{
         line-height: 56px;
     }
 
-/* .bloque1{
-
-} */
     .bloque ul{
         font-family: 'Roboto Mono';
         font-weight: 300;
@@ -98,9 +91,6 @@ main{
         background-color: rgb(0, 0, 0);
     }
 
-    /* .bloque1{
-
-    } */
 
     .bloque ul li span{
         color:white;
@@ -117,11 +107,10 @@ main{
     } */
 
 
-    .bloque h3{
+    /* .bloque h3{
         font-size: 22px;
     }
 
-/* ________________________________________________________________________________ */
 footer{
     height: 200px;
 
@@ -136,7 +125,6 @@ footer{
     position: sticky;
     top: 30px;
 
-    /* remember to delete */
     background-color: #26343f;
     border: 4px solid rgb(157, 156, 156);
     border-radius: 20px;
@@ -166,4 +154,4 @@ footer{
     .aside-class a {
         text-decoration: none;
         color: white;
-    }
+    } */ 
