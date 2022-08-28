@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #CED6D9;
+  background-color: #F4F4F4;
 }
 
 .main {
   display: grid;
-  grid-template: "nav nav nav" 100px "content content aside" auto "footer footer footer" 100px/1fr 1fr 300px;
+  grid-template: "nav nav nav" 100px "content content aside" auto "footer footer footer" 200px/1fr 1fr 400px;
 }
 
 .navbar {
@@ -30,28 +30,36 @@ body {
   display: inline-block;
   padding: 10px;
 }
+.navbar ul li a {
+  text-decoration: none;
+}
 
 .content {
   grid-area: content;
+  background-color: #F4F4F4;
 }
-.content header {
+.content h1 {
   width: 100vw;
   height: 200px;
   background-image: url("/styles/images/image6.png");
   margin: 0;
+  display: flex;
+  color: white;
+  padding-left: 200px;
+  align-items: center;
 }
 .content section {
-  padding: 20px;
+  padding: 10px 50px 10px 200px;
 }
 
 .aside {
   grid-area: aside;
   padding: 5px;
-  background-color: white;
+  background-color: #CED6D9;
   position: -webkit-sticky;
   position: sticky;
   height: 400px;
-  margin-right: 10px;
+  margin-right: 200px;
   top: 20px;
   z-index: 2;
   border-radius: 10px;
@@ -62,5 +70,12 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: blue;
+  background-color: #D61F51;
+}
+.footer .image {
+  padding: 20px 40px;
+  color: white;
+}
+.footer img {
+  width: 180px;
 }/*# sourceMappingURL=estilos.css.map */
