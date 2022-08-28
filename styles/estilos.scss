@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$colorBody: #CED6D9;
+$Background: white;
+$pageColor: #CED6D9;
+$red: #D61F51;
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $colorBody;
+}
+
+.main {
+    display: grid;
+    grid-template: 'nav nav nav' 100px
+            'content content aside' auto
+              'footer footer footer' 100px 
+              / 1fr 1fr 300px;
+
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: $Background;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+
+    ul{
+        list-style-type: none;
+
+        li{
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
+
+.content {
+    grid-area: content;
+
+    {
+        width: 100vw;
+        height: 200px;
+        background-image: url('/styles/images/image6.png');
+        margin: 0;
+    }
+
+    section{
+        padding: 20px;
+    }
+}
+
+.aside {
+    grid-area: aside;
+    padding: 5px;
+    background-color: $Background;
+    position: sticky;
+    height: 400px; 
+    margin-right: 10px;
+    top: 20px;
+    z-index: 2;
+    border-radius: 10px;
+
+    ul{
+        list-style-type: none;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+}
