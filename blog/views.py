@@ -9,4 +9,4 @@ from blog.models import *
 # Le puedo cambiar el nombre a Main o algo asi
 def blog(request):
     # posts = Post.objects.all() Esto era una tabla de la BD
-    return render(request, "blog/Git-GitHub.html", {'blog': 'Blog'})
+    return render(request, "blog/Git-GitHub.html")
