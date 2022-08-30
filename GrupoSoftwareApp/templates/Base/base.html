@@ -1,0 +1,26 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Cargando el static global y creando link hacia los estilos de uno de los archivos del blog -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/Git-GitHub-style.css' %}">
+
+    <title>Grupo de Software</title>
+</head>
+<body>
+    <!-- Header -->
+
+    <!-- Contenido Cambiante -->
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+
+</body>
+</html>
