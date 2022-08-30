@@ -1,1 +1,1 @@
-web: gunicorn GestionTrabajos.wsgi --log-file -
+web: gunicorn GrupoSoftware.wsgi --log-file -
