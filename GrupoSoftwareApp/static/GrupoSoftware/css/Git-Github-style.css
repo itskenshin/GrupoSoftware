@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@200;400;600&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;600&family=Roboto:wght@100;400;700&display=swap');
 
-
-
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -104,10 +102,10 @@ main{
         content:"$";
         color:white;
         margin-right:8px;
-    } */
+    }
 
 
-    /* .bloque h3{
+    .bloque h3{
         font-size: 22px;
     }
 
@@ -154,4 +152,4 @@ footer{
     .aside-class a {
         text-decoration: none;
         color: white;
-    } */ 
+    }
