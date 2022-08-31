@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.navbar {
+  font-family: "DM Sans", sans-serif;
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "image ul ul";
+  align-content: space-between;
+}
+.navbar img {
+  grid-area: image;
+  width: 80px;
+  height: 80px;
+}
+.navbar ul {
+  grid-area: ul;
+  list-style-type: none;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 5px 0px 5px;
+}
+.navbar ul li :hover {
+  background-color: #A360F8;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  transition: all 400ms;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul .blog {
+  background-color: #A360F8;
+  border-radius: 5px;
+}
+.navbar ul .blog a {
+  color: white;
+}
+.navbar ul .blog :hover {
+  background-color: none;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #000000;
+  position: relative;
+}
+.footer .image {
+  padding: 20px 40px;
+  color: white;
+}
+.footer img {
+  width: 180px;
+}/*# sourceMappingURL=style.css.map */

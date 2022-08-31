@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$colorBody: #F4F4F4;
+$Background: rgb(0, 0, 0);
+$pageColor: #CED6D9;
+$red: #c11fd6;
+
+.navbar {
+    font-family: 'DM Sans', sans-serif;
+    grid-area: nav;
+    background-color: $Background;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'image ul ul';
+    align-content: space-between;
+
+    img {
+        grid-area: image;
+        width: 80px;
+        height: 80px;
+    }
+
+    ul{
+        grid-area: ul;
+        list-style-type: none;
+        border-radius: 5px;
+        display: flex;
+        text-align: center;
+        
+        li{
+            display: inline-block;
+            padding: 10px;
+            margin: 0px 5px 0px 5px;
+
+            :hover{
+                background-color: #A360F8;
+                border-radius: 5px;
+                color: white;
+                padding: 10px;
+                transition: all 400ms;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+        
+        .blog {
+                background-color: #A360F8;
+                border-radius: 5px;
+
+                a {
+                    color: white;
+                } 
+
+                :hover{
+                    background-color: none;
+                    border-radius: 5px;
+                    padding: 0;
+                    color: white;
+                }
+            }
+        }
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #000000;
+    position: relative;
+
+    .image {
+        padding: 20px 40px;
+        color: white;
+    }
+
+    img {
+        width: 180px;
+    }
+}
