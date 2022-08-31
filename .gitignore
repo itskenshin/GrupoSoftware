@@ -1,0 +1,6 @@
+*.sqlite3
+*.json
+*.png
+
+GestionTrabajosApp/__pycache__/
+GestionTrabajosApp/tests.py
