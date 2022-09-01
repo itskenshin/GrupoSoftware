@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+$colorBody: #F4F4F4;
+$Background: rgb(0, 0, 0);
+$pageColor: #CED6D9;
+$red: #c11fd6;
+
+//Contenedor de toda la pagina
+.main {
+    grid-template-areas: 'nav nav nav'
+              'content content content'
+                'footer footer footer';
+}
+
+//Contenedor principal de las noticias
+.content {
+    grid-area: content;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px;
+    position: relative;
+    background-color: red;
+
+    .cont-noticia, .cont-publicaciones {
+        display: flex;
+        background-color: green;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 54px;
+        width: 95%;
+        padding: 10px;
+
+        //Contenedor del titulo y descripcion de la noticia del slide
+        .titulo {
+            position: absolute;
+            z-index: 1;
+            color: white;
+            top: 390px;
+            left: 190px;
+
+            p {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+            }
+
+            h3 {
+            margin: 0;
+            }
+        }
+    }
+
+    //Contenedor de las noticias (slide)
+    .cont-noticia {
+        justify-content: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    //Contenedor de todas las publicaciones
+    .cont-publicaciones {
+        gap: 50px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        //Contenedores que estan dentro del div de publicaciones
+        .caja {
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: blueviolet;
+            font-weight: 400;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 44px;
+            background-color: white;
+
+            //Contenedor de informacion de la noticia, titulo y descripcion
+            .info {
+               background-color: black;
+               color: white;
+               padding: 10px;
+               border-bottom-right-radius: 10px;
+               border-bottom-left-radius: 10px;
+               
+               //Link de el nombre del autor de la noticia o blog (isael diloche)
+               a {
+                text-decoration: none;
+                color: #A3BCFF;
+               }
+            }
+        }
+    }
+}
+
+
+
+
+//Navbar y footer que creo isael y kritiam anteriormente (no le he puesto la mano a eso jummm)
+.navbar {
+    grid-area: nav;
+    font-family: 'DM Sans', sans-serif;
+    grid-area: nav;
+    background-color: $Background;
+    padding: 10px;
+    display: grid;
+    z-index: 3;
+    width: 100vw;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'image ul none';
+    align-content: space-between;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+
+    .active{
+        background-color: hsl(266, 92%, 67%);
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        a {
+            color: white;
+        } 
+
+        :hover{
+            background-color: none;
+            border-radius: 5px;
+            padding: 0;
+            color: white;
+        }
+    }
+
+    img {
+        grid-area: image;
+        width: 80px;
+        height: 80px;
+    }
+
+    ul{
+        grid-area: ul;
+        list-style-type: none;
+        border-radius: 5px;
+        display: flex;
+        
+        li{
+            display: flex;
+            padding: 10px;
+            margin: 0px 10px 0px 10px;
+            border-radius: 5px;
+            align-items: center;
+            text-align: center;
+            transition: all 600ms;
+        }
+
+        li:hover{
+            background-color: hsl(266, 92%, 67%);
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #000000;
+    position: relative;
+    top: 200px;
+
+    .image {
+        padding: 20px 40px;
+        color: white;
+    }
+
+    img {
+        width: 180px;
+    }
+}
