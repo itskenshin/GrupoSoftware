@@ -1,10 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.main {
+  grid-template-areas: "nav nav nav" "content content content" "footer footer footer";
+}
+
+.content {
+  grid-area: content;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  background-color: red;
+}
+.content .cont-noticia, .content .cont-publicaciones {
+  display: flex;
+  background-color: green;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 54px;
+  width: 95%;
+  padding: 10px;
+}
+.content .cont-noticia .titulo, .content .cont-publicaciones .titulo {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 390px;
+  left: 190px;
+}
+.content .cont-noticia .titulo p, .content .cont-publicaciones .titulo p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.content .cont-noticia .titulo h3, .content .cont-publicaciones .titulo h3 {
+  margin: 0;
+}
+.content .cont-noticia {
+  justify-content: center;
+}
+.content .cont-noticia img {
+  width: 80%;
+}
+.content .cont-publicaciones {
+  gap: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .cont-publicaciones .caja {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  font-weight: 400;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 44px;
+  background-color: white;
+}
+.content .cont-publicaciones .caja .info {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.content .cont-publicaciones .caja .info a {
+  text-decoration: none;
+  color: #A3BCFF;
+}
+
 .navbar {
+  grid-area: nav;
   font-family: "DM Sans", sans-serif;
   grid-area: nav;
   background-color: rgb(0, 0, 0);
   padding: 10px;
   display: grid;
+  z-index: 3;
   width: 100vw;
   height: 100px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -61,6 +140,7 @@
   grid-area: footer;
   background-color: #000000;
   position: relative;
+  top: 200px;
 }
 .footer .image {
   padding: 20px 40px;
