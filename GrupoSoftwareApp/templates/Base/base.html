@@ -8,20 +8,38 @@
 
     <!-- Cargando el static global y creando link hacia los estilos de uno de los archivos del blog -->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/Git-GitHub-style.css' %}">
-
+    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'GrupoSoftware/css/images/group_icon_title.png' %}">
 
     <title>Grupo de Software</title>
 </head>
 <body>
-    <!-- Header -->
-
+    <!-- Navbar -->
+    <nav class="navbar" id="home">
+        <img src="{% static 'GrupoSoftware/css/images/group_icon_1.png'%}" class="logo" alt="Logo del grupo">
+            <ul>
+                <li class="inicio {% if request.path == '/' %}active{% endif %}"><a href="{% url 'Main' %}">Proyectos</a></li>
+                <li class="blog {% if request.path == '/blog/' %}active{% endif %}"><a href="{% url 'Blog' %}">Blog</a></li>
+                <li ><a href="">Diseño</a></li>
+                <li ><a href="">Contactos</a></li>
+                <li><a href="">Recursos</a></li>
+            </ul>
+    </nav>
     <!-- Contenido Cambiante -->
     {% block content %}
 
     {% endblock %}
 
     <!-- Footer -->
+    <footer class="footer">
+        <div class="image">
+            <img src="{% static 'GrupoSoftware/css/images/image_5.png'%}" class="logo" alt="Logo del grupo">
+            <p>Comunidad de estudiantes del ITLA </p>
+        </div>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'GrupoSoftware/scripts/nav.js' %}"></script>
 </body>
 </html>
