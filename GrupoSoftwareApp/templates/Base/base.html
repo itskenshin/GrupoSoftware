@@ -19,10 +19,10 @@
     <nav class="navbar" id="home">
         <img src="{% static 'GrupoSoftware/css/images/group_icon_1.png'%}" class="logo" alt="Logo del grupo">
             <ul>
-                <li class="inicio"><a href="">Inicio</a></li>
-                <li class="blog"><a href="">Blog</a></li>
-                <li><a href="">#SeVan</a></li>
-                <li><a href="">Proyectos</a></li>
+                <li class="inicio {% if request.path == '/' %}active{% endif %}"><a href="{% url 'Main' %}">Proyectos</a></li>
+                <li class="blog {% if request.path == '/blog/' %}active{% endif %}"><a href="{% url 'Blog' %}">Blog</a></li>
+                <li ><a href="">Diseño</a></li>
+                <li ><a href="">Contactos</a></li>
                 <li><a href="">Recursos</a></li>
             </ul>
     </nav>
@@ -39,5 +39,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'GrupoSoftware/scripts/nav.js' %}"></script>
 </body>
 </html>

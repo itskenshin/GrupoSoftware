@@ -5,9 +5,28 @@
   background-color: rgb(0, 0, 0);
   padding: 10px;
   display: grid;
+  width: 100vw;
+  height: 100px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "image ul ul";
+  grid-template-areas: "image ul none";
   align-content: space-between;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+}
+.navbar .active {
+  background-color: hsl(266deg, 92%, 67%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.navbar .active a {
+  color: white;
+}
+.navbar .active :hover {
+  background-color: none;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
 }
 .navbar img {
   grid-area: image;
@@ -19,35 +38,22 @@
   list-style-type: none;
   border-radius: 5px;
   display: flex;
-  text-align: center;
 }
 .navbar ul li {
-  display: inline-block;
+  display: flex;
   padding: 10px;
-  margin: 0px 5px 0px 5px;
-}
-.navbar ul li :hover {
-  background-color: #A360F8;
+  margin: 0px 10px 0px 10px;
   border-radius: 5px;
-  color: white;
-  padding: 10px;
-  transition: all 400ms;
+  align-items: center;
+  text-align: center;
+  transition: all 600ms;
 }
-.navbar ul li a {
+.navbar ul li:hover {
+  background-color: hsl(266deg, 92%, 67%);
+  padding: 10px;
+}
+.navbar ul a {
   text-decoration: none;
-  color: white;
-}
-.navbar ul .blog {
-  background-color: #A360F8;
-  border-radius: 5px;
-}
-.navbar ul .blog a {
-  color: white;
-}
-.navbar ul .blog :hover {
-  background-color: none;
-  border-radius: 5px;
-  padding: 0;
   color: white;
 }
 
