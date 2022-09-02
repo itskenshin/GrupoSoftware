@@ -1,5 +1,5 @@
-let navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll',function(){
-    navbar.classList.toogle('.active',windows.scrollY > 0);
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("nav");
+    header.classList.toggle("navbar-fixed",window.scrollY>245);
 })
