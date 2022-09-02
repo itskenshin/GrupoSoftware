@@ -84,11 +84,10 @@ $red: #c11fd6;
 
     //-----------------------Contenedor de todas las publicaciones
     .cont-publicaciones {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
         gap: 30px;
-        padding: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding: 20px 0px;
 
         //Contenedores que estan dentro del div de publicaciones
 
@@ -103,15 +102,10 @@ $red: #c11fd6;
             flex-direction: column;
             background-color: blueviolet;
             font-weight: 400;
-            border-radius: 10px;
+            border-radius: 5px;
             font-size: 13px;
             line-height: 44px;
             background-color: white;
-
-            img{
-                width: 250px;
-                height: 200px;
-            }
 
             h4,p{
                 margin: 0px;
@@ -195,7 +189,7 @@ $red: #c11fd6;
 
         a {
             color: white;
-        } 
+        }
 
         :hover{
             background-color: none;
@@ -233,6 +227,8 @@ $red: #c11fd6;
     .cont-noticia{
         border-radius: 0px;
     }
-}
 
-//jaroldi danando el css
+    .publicaciones,.destacado{
+        padding: 0px 10px;
+    }
+}
