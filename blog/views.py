@@ -10,3 +10,7 @@ from blog.models import *
 def blog(request):
     # posts = Post.objects.all() Esto era una tabla de la BD
     return render(request, "blog/blog-main.html")
+
+def git_github_post(request):
+
+    return render(request, 'blog/Git-GitHub.html')
