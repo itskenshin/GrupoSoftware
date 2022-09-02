@@ -1,34 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 .main {
-  grid-template-areas: "nav nav nav" "content content content" "footer footer footer";
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
-  grid-area: content;
-  top: 120px;
+  width: 70vw;
+  top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-  margin: 40px;
+  padding: 0px 20px;
   position: relative;
-  background-color: red;
 }
 .content .cont-noticia, .content .cont-publicaciones {
-  display: flex;
-  background-color: green;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 54px;
-  width: 95%;
-  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .content .cont-noticia .titulo, .content .cont-publicaciones .titulo {
-  position: absolute;
-  z-index: 1;
   color: white;
   top: 390px;
   left: 190px;
@@ -42,34 +38,63 @@
   margin: 0;
 }
 .content .cont-noticia {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
+  height: 438px;
+  padding: 20px;
+  border-radius: 5px;
+  background-image: url("images/1129x438.png");
 }
 .content .cont-noticia img {
-  width: 80%;
+  width: 100%;
+}
+.content .cont-noticia h3, .content .cont-noticia p {
+  text-shadow: 0px 0px 2px black;
+  color: white;
+}
+.content .cont-noticia h3 {
+  position: absolute;
+  margin: 0px;
+  bottom: 50px;
+}
+.content .cont-noticia p {
+  position: absolute;
+  margin: 0px;
+  bottom: 10px;
 }
 .content .cont-publicaciones {
-  gap: 50px;
-  padding: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px 0px;
+}
+.content .cont-publicaciones .cont-publicaciones.caja {
+  width: 300px;
+  height: 300px;
 }
 .content .cont-publicaciones .caja {
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   background-color: blueviolet;
   font-weight: 400;
-  border-radius: 10px;
-  font-size: 18px;
+  border-radius: 5px;
+  font-size: 13px;
   line-height: 44px;
   background-color: white;
+}
+.content .cont-publicaciones .caja h4, .content .cont-publicaciones .caja p {
+  margin: 0px;
 }
 .content .cont-publicaciones .caja .info {
   background-color: black;
   color: white;
   padding: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  height: 75px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .content .cont-publicaciones .caja .info a {
   text-decoration: none;
@@ -93,20 +118,6 @@
   top: 0;
   box-sizing: border-box;
 }
-.navbar .active {
-  background-color: hsl(266deg, 92%, 67%);
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.navbar .active a {
-  color: white;
-}
-.navbar .active :hover {
-  background-color: none;
-  border-radius: 5px;
-  padding: 0;
-  color: white;
-}
 .navbar img {
   grid-area: image;
   width: 80px;
@@ -117,6 +128,7 @@
   list-style-type: none;
   border-radius: 5px;
   display: flex;
+  padding: 0px;
 }
 .navbar ul li {
   display: flex;
@@ -135,11 +147,26 @@
   text-decoration: none;
   color: white;
 }
+.navbar .active {
+  background-color: hsl(266deg, 92%, 67%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.navbar .active a {
+  color: white;
+}
+.navbar .active :hover {
+  background-color: none;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
+}
 
 .footer {
   grid-area: footer;
   background-color: #000000;
   position: relative;
+  width: 100%;
   top: 200px;
 }
 .footer .image {
@@ -148,4 +175,16 @@
 }
 .footer img {
   width: 180px;
+}
+
+@media screen and (max-width: 450px) {
+  .content {
+    width: 100%;
+  }
+  .cont-noticia {
+    border-radius: 0px;
+  }
+  .publicaciones, .destacado {
+    padding: 0px 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
