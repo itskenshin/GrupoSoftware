@@ -2,49 +2,59 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Cargando el static global y creando link hacia los estilos de uno de los archivos del blog -->
     {% load static %}
+
+    <!-- Enlaces con css -->
+    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/base/base.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/blog/blog-main.css' %}">
+
     <link rel="shortcut icon" href="{% static 'GrupoSoftware/css/images/group_icon_title.png' %}">
 
     <title>Grupo de Software</title>
 </head>
-<body>
 
-    <div class="main">
-            <!-- Navbar -->
-        <nav class="navbar" id="home">
-            <img src="{% static 'GrupoSoftware/css/images/group_icon_1.png'%}" class="logo" alt="Logo del grupo">
+<body class="cuerpo">
+    <header class="main" style="background-color: black; height: 50vh; gap: 30px 0;">
+        <!-- Barra de Navegacion -->
+        <div style="display: flex; justify-content: center; height: auto;">
+            <img src="{% static 'GrupoSoftware/css/images/image_7.png'%}" class="logo" alt="Logo del grupo">
+        </div>
+
+        <nav class="navbar">
                 <ul>
-                    <li class="inicio {% if request.path == '/' %}active{% endif %}"><a href="{% url 'Main' %}">Proyectos</a></li>
-                    <li class="blog {% if request.path == '/blog/' %}active{% endif %}"><a href="{% url 'Blog' %}">Blog</a></li>
-                    <li ><a href="">Diseño</a></li>
-                    <li ><a href="">Contactos</a></li>
-                    <li><a href="">Recursos</a></li>
+                    <a href="{% url 'Main' %}"><li class="inicio {% if request.path == '/' %}active{% endif %}">Proyectos</li></a>
+                    <a href="#"><li class="blog {% if request.path == '/diseños/' %}active{% endif %}">Diseños</li></a>
+                    <a href="{% url 'Blog' %}"><li class="{% if request.path == '/blog/' %}active{% endif %}"> Blog</li></a>
+                    <a href="#"><li class="{% if request.path == '/contacto/' %}active{% endif %}"> Contacto</li></a>
+                    <a href="#"><li class="{% if request.path == '/recursos/' %}active{% endif %}"> Recursos</li></a>
                 </ul>
         </nav>
-        <!-- Contenido Cambiante -->
+    </header>
+    
+    <!-- Contenedor principal -->
+    <div class="main">
         {% block content %}
 
         {% endblock %}
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="image">
-                <img src="{% static 'GrupoSoftware/css/images/image_5.png'%}" class="logo" alt="Logo del grupo">
-                <p>Comunidad de estudiantes del ITLA </p>
-            </div>
-        </footer>
     </div>
-   
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="image">
+            <img src="{% static 'GrupoSoftware/css/images/image_5.png'%}" class="logo" alt="Logo del grupo">
+            <p>Comunidad de estudiantes del ITLA </p>
+        </div>
+    </footer>
+
     <script src="{% static 'GrupoSoftware/scripts/nav.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
 </body>
 </html>
