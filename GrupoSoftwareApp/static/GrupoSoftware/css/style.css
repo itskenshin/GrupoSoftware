@@ -9,13 +9,11 @@
 
 .content {
   width: 70vw;
-  top: 100px;
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
   position: relative;
 }
-
 .content .cont-noticia, .content .cont-publicaciones {
   font-family: "Poppins";
   font-style: normal;
@@ -43,22 +41,20 @@
   position: relative;
   flex-direction: column;
   justify-content: center;
-  height: 438px;
-  padding: 20px;
   border-radius: 5px;
-  background-image: url("images/1129x438.png");
 }
 .content .cont-noticia img {
   width: 100%;
 }
 .content .cont-noticia h3, .content .cont-noticia p {
+  position: absolute;
   text-shadow: 0px 0px 2px black;
   color: white;
+  left: 20px;
 }
 .content .cont-noticia h3 {
   position: absolute;
-  margin: 0px;
-  bottom: 50px;
+  bottom: 30px;
 }
 .content .cont-noticia p {
   position: absolute;
@@ -88,14 +84,8 @@
 }
 .content .cont-publicaciones .caja h4, .content .cont-publicaciones .caja p {
   margin: 0px;
-  width: 207.9px;
-  white-space: nowrap;
-  text-overflow: ellipsis !important;
-  overflow: hidden;
 }
 .content .cont-publicaciones .caja .info {
-
-
   background-color: black;
   color: white;
   padding: 10px;
@@ -106,6 +96,67 @@
 .content .cont-publicaciones .caja .info a {
   text-decoration: none;
   color: #A3BCFF;
+}
+
+.navbar {
+  grid-area: nav;
+  font-family: "DM Sans", sans-serif;
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: grid;
+  z-index: 3;
+  width: 100vw;
+  height: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "image ul none";
+  align-content: space-between;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+}
+.navbar img {
+  grid-area: image;
+  width: 80px;
+  height: 80px;
+}
+.navbar ul {
+  grid-area: ul;
+  list-style-type: none;
+  border-radius: 5px;
+  display: flex;
+  padding: 0px;
+}
+.navbar ul li {
+  display: flex;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  transition: all 600ms;
+}
+.navbar ul li:hover {
+  background-color: hsl(266deg, 92%, 67%);
+  padding: 10px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .active {
+  background-color: hsl(266deg, 92%, 67%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.navbar .active a {
+  color: white;
+}
+.navbar .active :hover {
+  background-color: none;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
 }
 
 .footer {
@@ -123,12 +174,28 @@
   width: 180px;
 }
 
+@media screen and (max-width: 700px) {
+  .cont-noticia h3 {
+    font-size: 1.2rem;
+  }
+  .cont-noticia p {
+    font-size: 0.9rem;
+  }
+}
 @media screen and (max-width: 450px) {
   .content {
     width: 100%;
   }
-  .cont-noticia {
-    border-radius: 0px;
+  .cont-noticia h3, .cont-noticia p {
+    left: 5px;
+  }
+  .cont-noticia h3 {
+    font-size: 1rem;
+    top: 50px;
+  }
+  .cont-noticia p {
+    font-size: 0.7rem;
+    top: 90px;
   }
   .publicaciones, .destacado {
     padding: 0px 10px;
