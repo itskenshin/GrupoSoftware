@@ -6,7 +6,6 @@ from .views import *
 
 urlpatterns = [
     path('', main, name="Main"),
-
 ]
 #comentario
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
