@@ -6,40 +6,33 @@ $Background: rgb(0, 0, 0);
 $pageColor: #CED6D9;
 $red: #c11fd6;
 
-//Contenedor de toda la pagina
-.main {
-    grid-template-areas: 'nav nav nav'
-              'content content content'
-                'footer footer footer';
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-//Contenedor principal de las noticias
+//-----------------------------Contenedor principal de las noticias
 .content {
-    grid-area: content;
-    top: 120px;
+    width: 70vw;
+    top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    margin: 40px;
+    padding: 0px 20px;
     position: relative;
-    background-color: red;
 
     .cont-noticia, .cont-publicaciones {
-        display: flex;
-        background-color: green;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 54px;
-        width: 95%;
-        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
 
         //Contenedor del titulo y descripcion de la noticia del slide
         .titulo {
-            position: absolute;
-            z-index: 1;
             color: white;
             top: 390px;
             left: 190px;
@@ -56,41 +49,82 @@ $red: #c11fd6;
         }
     }
 
-    //Contenedor de las noticias (slide)
+    //--------------------------Contenedor de las noticias (slide)
     .cont-noticia {
+        display: flex;
+        position: relative;
+        flex-direction: column;
         justify-content: center;
+        height: 438px;
+        padding: 20px;
+        border-radius: 5px;
+        background-image: url('images/1129x438.png');
 
         img {
-            width: 80%;
+            width: 100%;
+        }
+
+        h3,p{
+            text-shadow: 0px 0px 2px black;
+            color: white;
+        }
+
+        h3{
+            position: absolute;
+            margin: 0px;
+            bottom: 50px;
+        }
+
+        p{
+            position: absolute;
+            margin: 0px;
+            bottom: 10px;
         }
     }
 
-    //Contenedor de todas las publicaciones
+    //-----------------------Contenedor de todas las publicaciones
     .cont-publicaciones {
-        gap: 50px;
+        display: flex;
+        gap: 30px;
         padding: 20px;
         flex-wrap: wrap;
         justify-content: center;
 
         //Contenedores que estan dentro del div de publicaciones
+
+        .cont-publicaciones.caja{
+            width: 300px;
+            height: 300px;
+        }
+
         .caja {
-            border-radius: 10px;
+            border-radius: 5px;
             display: flex;
             flex-direction: column;
             background-color: blueviolet;
             font-weight: 400;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 13px;
             line-height: 44px;
             background-color: white;
+
+            img{
+                width: 250px;
+                height: 200px;
+            }
+
+            h4,p{
+                margin: 0px;
+            }
 
             //Contenedor de informacion de la noticia, titulo y descripcion
             .info {
                background-color: black;
                color: white;
                padding: 10px;
-               border-bottom-right-radius: 10px;
-               border-bottom-left-radius: 10px;
+               height: 75px;
+               border-bottom-right-radius: 5px;
+               border-bottom-left-radius: 5px;
                
                //Link de el nombre del autor de la noticia o blog (isael diloche)
                a {
@@ -102,10 +136,7 @@ $red: #c11fd6;
     }
 }
 
-
-
-
-//Navbar y footer que creo isael y kritiam anteriormente (no le he puesto la mano a eso jummm)
+//-------------------------------Navbar-----------------------------
 .navbar {
     grid-area: nav;
     font-family: 'DM Sans', sans-serif;
@@ -123,23 +154,6 @@ $red: #c11fd6;
     top: 0;
     box-sizing: border-box;
 
-    .active{
-        background-color: hsl(266, 92%, 67%);
-        border-radius: 5px;
-        box-sizing: border-box;
-
-        a {
-            color: white;
-        } 
-
-        :hover{
-            background-color: none;
-            border-radius: 5px;
-            padding: 0;
-            color: white;
-        }
-    }
-
     img {
         grid-area: image;
         width: 80px;
@@ -151,6 +165,7 @@ $red: #c11fd6;
         list-style-type: none;
         border-radius: 5px;
         display: flex;
+        padding: 0px;
         
         li{
             display: flex;
@@ -172,12 +187,30 @@ $red: #c11fd6;
             color: white;
         }
     }
+
+    .active{
+        background-color: hsl(266, 92%, 67%);
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        a {
+            color: white;
+        } 
+
+        :hover{
+            background-color: none;
+            border-radius: 5px;
+            padding: 0;
+            color: white;
+        }
+    }
 }
 
 .footer{
     grid-area: footer;
     background-color: #000000;
     position: relative;
+    width: 100%;
     top: 200px;
 
     .image {
@@ -187,5 +220,17 @@ $red: #c11fd6;
 
     img {
         width: 180px;
+    }
+}
+
+//--------------------------------------------media query
+
+@media screen and (max-width: 450px){
+    .content{
+        width: 100%;
+    }
+
+    .cont-noticia{
+        border-radius: 0px;
     }
 }
