@@ -9,13 +9,11 @@
 
 .content {
   width: 70vw;
-  top: 100px;
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
   position: relative;
 }
-
 .content .cont-noticia, .content .cont-publicaciones {
   font-family: "Poppins";
   font-style: normal;
@@ -100,6 +98,67 @@
 .content .cont-publicaciones .caja .info a {
   text-decoration: none;
   color: #A3BCFF;
+}
+
+.navbar {
+  grid-area: nav;
+  font-family: "DM Sans", sans-serif;
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: grid;
+  z-index: 3;
+  width: 100vw;
+  height: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "image ul none";
+  align-content: space-between;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+}
+.navbar img {
+  grid-area: image;
+  width: 80px;
+  height: 80px;
+}
+.navbar ul {
+  grid-area: ul;
+  list-style-type: none;
+  border-radius: 5px;
+  display: flex;
+  padding: 0px;
+}
+.navbar ul li {
+  display: flex;
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  transition: all 600ms;
+}
+.navbar ul li:hover {
+  background-color: hsl(266deg, 92%, 67%);
+  padding: 10px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .active {
+  background-color: hsl(266deg, 92%, 67%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.navbar .active a {
+  color: white;
+}
+.navbar .active :hover {
+  background-color: none;
+  border-radius: 5px;
+  padding: 0;
+  color: white;
 }
 
 .footer {
