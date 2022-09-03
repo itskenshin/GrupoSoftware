@@ -131,74 +131,82 @@ $red: #c11fd6;
 }
 
 //-------------------------------Navbar-----------------------------
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
 .navbar {
     grid-area: nav;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
     grid-area: nav;
-    background-color: $Background;
-    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    /*padding: 10px;*/
     display: grid;
-    z-index: 3;
-    width: 100vw;
+    width: auto;
     height: 100px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'image ul none';
+    grid-template-areas: "image ul none";
     align-content: space-between;
-    position: fixed;
-    top: 0;
+    justify-content: center;
+    
     box-sizing: border-box;
-
-    img {
-        grid-area: image;
-        width: 80px;
-        height: 80px;
-    }
-
-    ul{
-        grid-area: ul;
-        list-style-type: none;
-        border-radius: 5px;
-        display: flex;
-        padding: 0px;
-        
-        li{
-            display: flex;
-            padding: 10px;
-            margin: 0px 10px 0px 10px;
-            border-radius: 5px;
-            align-items: center;
-            text-align: center;
-            transition: all 600ms;
-        }
-
-        li:hover{
-            background-color: hsl(266, 92%, 67%);
-            padding: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-    }
-
-    .active{
-        background-color: hsl(266, 92%, 67%);
-        border-radius: 5px;
-        box-sizing: border-box;
-
-        a {
-            color: white;
-        }
-
-        :hover{
-            background-color: none;
-            border-radius: 5px;
-            padding: 0;
-            color: white;
-        }
-    }
 }
+
+.navbar-fixed{
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    transition: all 600ms;
+    z-index: 2;
+    box-shadow: 0px -2px 7px rgba(255, 255, 255, 0.15), 0px 5px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+  
+.navbar .active {
+    background-color: #a15df8;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .navbar .active a {
+    color: white;
+  }
+  .navbar .active :hover {
+    background-color: none;
+    border-radius: 5px;
+    padding: 0;
+    color: white;
+  }
+
+  .navbar ul {
+    padding: 0;
+    grid-area: ul;
+    list-style-type: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    display: flex;
+    padding: 14px 20px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    transition: all 600ms;
+  }
+  
+  .navbar ul li:hover {
+    background-color: rgba(160, 93, 248, 0.356);
+    padding: 14px 20px;
+  }
+
+  .navbar ul a {
+    text-decoration: none;
+    color: white;
+  }
 
 .footer{
     grid-area: footer;
@@ -243,25 +251,26 @@ $red: #c11fd6;
   }
   
   .slides{
+
     width: 500%;
     height: 500px;
     display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
+
+        input{
+            display: none;
+        }
+    }
   
   .slide {
     width: 20%;
     transition: 2s;
-  }
-  
-  .slide img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
+
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
   
   .navigation-manual{
     display: flex;
@@ -282,7 +291,6 @@ $red: #c11fd6;
   
   .manual-btn:not(:last-child){
     margin-right: 40px;
-  
   }
   
   .manual-btn:hover{
@@ -357,20 +365,24 @@ $red: #c11fd6;
         display: flex;
         word-wrap: break-word;
         /* border: 2px solid black; */
+
+     }
+
+        h1{
+            bottom: 90px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+
+        p{
+            bottom: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
-}
+
   
-  .slide h1{
-    bottom: 90px;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
-  }
-  
-  .slide p{
-    bottom: 60px;
-    font-size: 18px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  }
+   
