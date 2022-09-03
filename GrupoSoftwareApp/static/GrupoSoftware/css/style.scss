@@ -82,17 +82,11 @@ $red: #c11fd6;
     //-----------------------Contenedor de todas las publicaciones
     .cont-publicaciones {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
         gap: 30px;
         padding: 20px 0px;
 
         //Contenedores que estan dentro del div de publicaciones
-
-        .cont-publicaciones.caja{
-            width: 300px;
-            height: 300px;
-        }
-
         .caja {
             border-radius: 5px;
             display: flex;
@@ -160,7 +154,6 @@ $red: #c11fd6;
 
 }
 
-  
 .navbar .active {
     background-color: #a15df8;
     border-radius: 5px;
@@ -384,10 +377,8 @@ $red: #c11fd6;
         text-shadow: 1px 1px 2px #000000;
         color: white;
         position: absolute;
-        color: green;
         display: flex;
         word-wrap: break-word;
-        /* border: 2px solid black; */
 
      }
 
