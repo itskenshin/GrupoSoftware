@@ -1,0 +1,108 @@
+<!------------------------------------------------------------------
+    WIDGET - CONTENEDOR CON EL CONTENIDO MAS DESTACADO
+        
+NOTA
+    "Este widget es como si el codigo estuviese en el archivo en el
+    que lo utilices por lo que no tienes que crear enlaces hacia css
+    ni con un script de javascript."
+-------------------------------------------------------------------->
+
+{% load static %}
+
+<h2>Destacado</h2>
+
+<!-- SLIDER -->
+<div class="slider">
+
+    <div class="slides">
+        <!-- Radio buttons start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- Radio buttons end -->
+
+        <!-- slide images start -->
+        <div class="slide first">
+            <h1>Titulo del contenido</h1>
+            <p>Subtitulo del contenido o pequeña descripcion</p>
+            <img src="{% static 'GrupoSoftware/css/images/slider/slide_1.png' %}" alt="slide 1">              
+        </div>
+        <div class="slide">
+            <h1>Titulo del contenido</h1>
+            <p>Subtitulo del contenido o pequeña descripcion</p>
+            <img src="{% static 'GrupoSoftware/css/images/slider/slide_2.png' %}" alt="slide 2">           
+        </div>
+        <div class="slide">
+            <img src="{% static 'GrupoSoftware/css/images/slider/slide_3.png' %}" alt="slide 3">
+        </div>
+        <div class="slide">
+            <img src="{% static 'GrupoSoftware/css/images/slider/slide_4.png' %}" alt="slide 4">
+        </div>
+        <!-- slide images end -->
+
+        <!-- automatic navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- automatic navigation end --> 
+    </div>
+    
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!-- manual navigation end -->
+
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter ++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+</script>
+
+<!--
+<div class="cont-noticia">
+    <ul class="slider">
+        <li id="slide1">
+            <img src="https://dummyimage.com/1129x438/000/fff" alt="#">
+        </li>
+        <li id="slide2">
+            <img src="https://dummyimage.com/1129x438/FF42DE/fff" alt="#">
+        </li>
+        <li id="slide3">
+            <img src="https://dummyimage.com/1129x438/032FF5/fff" alt="#">
+        </li>                
+    </ul>
+
+    <h3>Titulo de la Noticia</h3>
+
+    <p>Breve descripcion</p>
+
+    <ul class="menu">
+        <li>
+            <a href="#slide1">1</a>
+        </li>
+        <li>
+            <a href="#slide2">2</a>
+        </li>
+        <li>
+            <a href="#slide3">3</a>
+        </li>
+    </ul>
+
+</div>
+-->
+
