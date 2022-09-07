@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cff640a-79bf-42a9-8693-b948de45be23" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrupoSoftwareApp/static/GrupoSoftware/css/images/1129x438.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GrupoSoftwareApp/static/GrupoSoftware/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/GrupoSoftwareApp/static/GrupoSoftware/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrupoSoftwareApp/templates/Base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/GrupoSoftwareApp/templates/Base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrupoSoftwareApp/static/GrupoSoftware/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/GrupoSoftwareApp/static/GrupoSoftware/scripts/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog-main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
