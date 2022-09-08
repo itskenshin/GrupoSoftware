@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 .main {
   display: flex;
   justify-content: center;
@@ -98,125 +97,6 @@
 .content .cont-publicaciones .caja .info a {
   text-decoration: none;
   color: #A3BCFF;
-}
-
-header {
-  background-image: url("images/headerImg.png");
-  height: 320px;
-  gap: 30px 0;
-  background-size: 120%;
-}
-
-@-webkit-keyframes change {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-@keyframes change {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-.navbar {
-  grid-area: nav;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  grid-area: nav;
-  background-color: rgba(0, 0, 0, 0);
-  display: grid;
-  width: auto;
-  height: 80px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "image ul none";
-  align-content: space-between;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.navbar-fixed {
-  background-color: black;
-  height: 80px;
-  position: fixed;
-  top: 0px;
-  transition: all 600ms;
-  z-index: 2;
-  box-shadow: 0px -2px 7px rgba(139, 98, 98, 0.15), 0px 5px 8px rgba(0, 0, 0, 0.25);
-}
-
-.navbar .active {
-  background-color: #a15df8;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.navbar .active a {
-  color: white;
-}
-
-.navbar .active :hover {
-  background-color: none;
-  border-radius: 5px;
-  padding: 0;
-  color: white;
-}
-
-.navbar ul {
-  padding: 0;
-  grid-area: ul;
-  list-style-type: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar ul li {
-  display: flex;
-  padding: 14px 20px;
-  margin: 0px 10px;
-  border-radius: 5px;
-  align-items: center;
-  text-align: center;
-  transition: all 600ms;
-}
-
-.navbar ul li:hover {
-  background-color: rgba(160, 93, 248, 0.356);
-  padding: 14px 20px;
-}
-
-.navbar ul a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: #000000;
-  position: relative;
-  width: 100%;
-  top: 200px;
-}
-.footer .image {
-  padding: 20px 40px;
-  color: white;
-}
-.footer img {
-  width: 180px;
 }
 
 /* Slider contenedor de imagenes */
@@ -378,5 +258,15 @@ header {
   }
   .publicaciones, .destacado {
     padding: 0px 10px;
+  }
+  header img {
+    width: 300px;
+    height: 150px;
+  }
+  header .navbar ul {
+    display: none;
+  }
+  .responsive {
+    display: inline-block;
   }
 }/*# sourceMappingURL=style.css.map */

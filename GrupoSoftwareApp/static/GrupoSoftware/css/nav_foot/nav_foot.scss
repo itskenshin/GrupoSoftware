@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+header{
+    background-image: url('headerImg.png'); 
+    background-color: black;
+    height: 320px; 
+    gap: 30px;
+}
+
+.navbar {
+    grid-area: nav;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    grid-area: nav;
+    background-color: rgba(0, 0, 0, 0);
+    /*padding: 10px;*/
+    display: grid;
+    width: auto;
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "image ul none";
+    align-content: space-between;
+    justify-content: center;
+    
+    box-sizing: border-box;
+
+    img{
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+        grid-area: ul;
+        list-style-type: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: white;
+          }
+
+        li {
+            display: flex;
+            padding: 14px 20px;
+            margin: 0px 10px;
+            border-radius: 5px;
+            align-items: center;
+            text-align: center;
+            transition: all 600ms;
+        }
+
+        li:hover {
+            background-color: rgba(160, 93, 248, 0.356);
+            padding: 14px 20px;
+        }
+    }
+}
+
+.navbar-fixed{
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    transition: all 600ms;
+    z-index: 2;
+    background-color: black;
+
+    img{
+        display: block;
+        transition: all 600ms;
+    }
+}
+  
+.navbar .active {
+    background-color: #a15df8;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    a {
+        color: white;
+    }
+}
+
+.navbar .active :hover {
+    background-color: none;
+    border-radius: 5px;
+    padding: 0;
+    color: white;
+}
+
+//==========================================================================
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+//---------------------------------------------footer
+
+.footer{
+    grid-area: footer;
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    top: 200px;
+
+    .image {
+        padding: 20px 40px;
+        color: white;
+    }
+
+    img {
+        width: 180px;
+    }
+}
+
+//--------------------------------------------media query
+
+@media screen and (max-width: 450px){
+    header{
+        img{
+            width: 300px;
+            height: 150px;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
