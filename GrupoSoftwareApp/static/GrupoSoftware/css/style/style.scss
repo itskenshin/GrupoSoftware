@@ -94,7 +94,6 @@ $red: #c11fd6;
             background-color: blueviolet;
             font-weight: 400;
             border-radius: 5px;
-            font-size: 13px;
             line-height: 44px;
             background-color: white;
 
@@ -103,6 +102,10 @@ $red: #c11fd6;
                 white-space: nowrap;
                 text-overflow: ellipsis !important;
                 overflow: hidden;
+            }
+
+            h4{
+                font-size: 22px;
             }
 
             //Contenedor de informacion de la noticia, titulo y descripcion
@@ -122,141 +125,6 @@ $red: #c11fd6;
                }
             }
         }
-    }
-}
-
-//-------------------------------Navbar-----------------------------
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-.navbar {
-    grid-area: nav;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    grid-area: nav;
-    background-color: rgb(0, 0, 0);
-    /*padding: 10px;*/
-    display: grid;
-    width: auto;
-    height: 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "image ul none";
-    align-content: space-between;
-    justify-content: center;
-    
-    box-sizing: border-box;
-}
-
-.navbar-fixed{
-    height: 80px;
-    position: fixed;
-    top: 0px;
-    transition: all 600ms;
-    z-index: 2;
-    box-shadow: 0px -2px 7px rgba(255, 255, 255, 0.15), 0px 5px 8px rgba(0, 0, 0, 0.25);
-
-}
-
-.navbar .active {
-    background-color: #a15df8;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  .navbar .active a {
-    color: white;
-  }
-  .navbar .active :hover {
-    background-color: none;
-    border-radius: 5px;
-    padding: 0;
-    color: white;
-  }
-
-  .navbar ul {
-    padding: 0;
-    grid-area: ul;
-    list-style-type: none;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar ul li {
-    display: flex;
-    padding: 14px 20px;
-    margin: 0px 10px;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
-    transition: all 600ms;
-  }
-  
-  .navbar ul li:hover {
-    background-color: rgba(160, 93, 248, 0.356);
-    padding: 14px 20px;
-  }
-
-  .navbar ul a {
-    text-decoration: none;
-    color: white;
-  }
-
-.footer{
-    grid-area: footer;
-    background-color: #000000;
-    position: relative;
-    width: 100%;
-    top: 200px;
-
-    .image {
-        padding: 20px 40px;
-        color: white;
-    }
-
-    img {
-        width: 180px;
-    }
-}
-
-//--------------------------------------------media query
-
-@media screen and (max-width: 700px){
-    .cont-noticia{
-        h3{
-            font-size: 1.2rem;
-        }
-
-        p{
-            font-size: 0.9rem;
-        }
-    }
-}
-
-@media screen and (max-width: 450px){
-    .content{
-        width: 100%;
-    }
-
-    .cont-noticia{
-
-        h3,p{
-            left: 5px;
-        }
-
-        h3{
-            font-size: 1.0rem;
-            top: 50px;
-        }
-
-        p{
-            font-size: 0.7rem;
-            top: 90px;
-        }
-    }
-
-    .publicaciones,.destacado{
-        padding: 0px 10px;
     }
 }
 
@@ -401,5 +269,60 @@ $red: #c11fd6;
         }
     }
 
-  
-   
+//--------------------------------------------media query
+
+@media screen and (max-width: 700px){
+    .cont-noticia{
+        h3{
+            font-size: 1.2rem;
+        }
+
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .content{
+        width: 100%;
+    }
+
+    .cont-noticia{
+
+        h3,p{
+            left: 5px;
+        }
+
+        h3{
+            font-size: 1.0rem;
+            top: 50px;
+        }
+
+        p{
+            font-size: 0.7rem;
+            top: 90px;
+        }
+    }
+
+    .publicaciones,.destacado{
+        padding: 0px 10px;
+    }
+
+    header{
+        img{
+            width: 300px;
+            height: 150px;
+        }
+
+        .navbar{
+            ul{
+                display: none;
+            }
+        }
+    }
+
+    .responsive{
+        display: inline-block;
+    }
+}

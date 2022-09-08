@@ -9,27 +9,29 @@
     {% load static %}
 
     <!-- Enlaces con css -->
-    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/base/base.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/blog/Git-Github.css' %}">
     <link rel="stylesheet" href="{% static 'GrupoSoftware/css/blog/blog-main.css' %}">
-
+    <link rel="stylesheet" href="{% static 'GrupoSoftware/css/home_style/home.css' %}">
     <link rel="shortcut icon" href="{% static 'GrupoSoftware/css/images/group_icon_title.png' %}">
 
     <title>Grupo de Software</title>
 </head>
 
 <body class="cuerpo">
-    <header class="main" style="background-color: black; height: 50vh; gap: 30px 0;">
+    <header class="main">
         <!-- Barra de Navegacion -->
         <div style="display: flex; justify-content: center; height: auto;">
             <img src="{% static 'GrupoSoftware/css/images/image_7.png'%}" class="logo" alt="Logo del grupo">
         </div>
 
         <nav class="navbar">
+
+            <img src="{% static 'GrupoSoftware/css/images/group_icon_1.png'%}" class="logo" alt="Logo del grupo">
+
             <ul>
-                <a href="{% url 'Main' %}"><li class="inicio {% if request.path == '/' %}active{% endif %}">Proyectos</li></a>
+                <a href="{% url 'Main' %}"><li class="inicio {% if request.path == '/' %}active{% endif %}">Inicio</li></a>
                 <a href="#"><li class="blog {% if request.path == '/diseños/' %}active{% endif %}">Diseños</li></a>
                 <a href="{% url 'Blog' %}"><li class="{% if request.path == '/blog/' %}active{% endif %}"> Blog</li></a>
                 <a href="#"><li class="{% if request.path == '/contacto/' %}active{% endif %}"> Contacto</li></a>
@@ -41,7 +43,6 @@
     <!-- Contenedor principal -->
     <div class="main">
         {% block content %}
-
         {% endblock %}
     </div>
 
@@ -55,7 +56,6 @@
 
     <script src="{% static 'GrupoSoftware/scripts/nav.js' %}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
 
 </body>
 </html>

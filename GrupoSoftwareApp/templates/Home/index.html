@@ -4,16 +4,32 @@
 
 {% block content %}
 
-    <h1>Hola mundo</h1>
-    <hr>
-    <a href="{% url 'Blog' %}">Ir al blog</a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
+    <div class="home">
+        <div class="projects">
+            <h1>Proyectos</h1>
+        </div>
+        <div class="contact">
+            <img src="{% static 'GrupoSoftware/css/home_style/email.png'%}">
+            <h1>Contactanos</h1>
+        </div>
+        <div class="GroupLogo">
+            <img src="{% static 'GrupoSoftware/css/home_style/GroupLogo.png'%}" alt="Nuestro Logo">
+        </div>
+        <div class="text">
+            <h1>Grupo <br>de Software</h1>
+            <p>Bienvenido seas a nuestra pagina web del grupo de software. <br><br>
+            Aqui encontraras contenido que creamos, posts acerca de tecnologia y desarrollo personal, servicio que ofrecemos e incluso apoyo.
+            </p>
+        </div>
+        <div class="img"></div>
+        <div class="team">
+            <h1>Conoce nuestro Team</h1>
+        </div>
+        <div class="text2">
+        </div>
+        <div class="img2"></div>
+    </div>
+    <div>
+        <a href="{% url 'Blog' %}">Ir al blog</a>
+    </div>
 {% endblock %}
