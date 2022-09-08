@@ -81,6 +81,9 @@
 }
 .content .cont-publicaciones .caja h4, .content .cont-publicaciones .caja p {
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  overflow: hidden;
 }
 .content .cont-publicaciones .caja .info {
   background-color: black;
