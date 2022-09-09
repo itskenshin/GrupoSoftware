@@ -1,50 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-body {
-    box-sizing: border-box;
-    
-}
-
 .contenedorBlog {
     display: grid;
     grid-template-columns: 500px 1fr;
     grid-template-areas: 'head head'
-                  'aside main';
+                      'aside main-blog';
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
 
     .header-blog {
         grid-area: head;
     }
     
     .divHeader-blog {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 34px;
         display: flex;
         padding: 4rem;
         gap: 20px;
         justify-content: center;
 
         .info-blog {
+            padding: 10px;
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
-            width: 40%;
 
             div {
                 margin-top: 10px;
             }
 
             .principal-blog {
-                
-                .tag {
-                    background-color: #d1f8df;
-                    display: inline-block;
-                    border-radius: 10px;
-                    padding: 5px;
-                }
         
                 .fecha  {
                     margin-top: 20px;
@@ -65,13 +53,13 @@ body {
         }
     }
 
-    .aside {
+    .aside-blog {
         grid-area: aside;
         padding: 20px;
         position: sticky;
         height: 410px; 
         margin: 80px 100px 0px 100px;
-        top: 100px;
+        top: 200px;
         z-index: 2;
         border-radius: 10px;
         display: grid;
@@ -80,16 +68,6 @@ body {
         a {
             text-decoration: none;
             color: black;
-        }
-    
-        h3{
-            text-align: center;
-            color: rgb(49, 49, 49);
-    
-            :hover{
-                color: rgb(0, 0, 0);
-                transition: all 400ms;
-            }
         }
     
         ul{
@@ -103,20 +81,116 @@ body {
                 padding: 10px;
                 
                 :hover{
-                    background-color: #979797;
-                    border-radius: 5px;
-                    padding: 10px;
-                    width: 100%;
-                    color: white;
-                    margin: 0px 2px 0px 2px;
-                    transition: all 400ms;
+                    
+                    color: blue;
+                    transition: all 600ms;
                 }
             }
         }
     }
 
-    .contenedor-principal {
-        grid-area: main;
+    .main-blog {
+        grid-area: main-blog;
+        padding: 40px;
+        display: flex;
+        min-width: 400px;
+        flex-direction: column;
+
+
+        .bloque1 {
+            display: flex;
+            flex-direction: column;
+
+        }
+        
+        .parrafo-con-autor {
+            padding: 0 10px;
+            border-left: 5px solid #22C55E;
+                
+        }
     }
 }
 
+.tag {
+    background-color: #d1f8df;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 5px;
+    color: green;
+}
+
+.post-recientes {
+    width: 90%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+
+    h2 {
+        margin: 25px;
+        font-size: 30px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .cont-postRecientes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 30px;
+        color: black;
+        padding: 40px;
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            border-radius: 10px;
+            line-height: 34px;
+
+            h4,p{
+                margin: 0px;
+            }
+
+            .info { 
+               padding: 10px;
+        
+               a {
+                text-decoration: none;
+                color: black;
+               }
+
+            }
+        }
+    }
+}
+
+.separador {
+    height: 1px;
+    border-radius: 20px;
+    background-color: black;
+    width: 90%;
+}
+
+@media screen and (max-width: 1000px){
+
+    .divHeader-blog {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .contenedorBlog {
+        grid-template-areas: 'head head'
+                        'main-blog main-blog';
+
+       .aside-blog {
+        display: none;
+       }
+    }
+}
+    
