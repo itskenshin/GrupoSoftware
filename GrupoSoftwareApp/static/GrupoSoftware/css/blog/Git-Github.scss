@@ -12,11 +12,11 @@ body {
     grid-template-areas: 'head head'
                   'aside main';
 
-    header {
+    .header-blog {
         grid-area: head;
     }
     
-    .header-blog {
+    .divHeader-blog {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
