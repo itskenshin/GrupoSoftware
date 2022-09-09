@@ -39,31 +39,47 @@
         </div>
     </div>
 
-    <div class="main">
-        <div class="contenedor-principal">
-            <article>
-                <h1 class="principal-title">Git / Github <img width="50" align="absmiddle" src="{% static 'GrupoSoftware/css/images/git.png'%}" alt="Git"> </h1>
-
-                <div class="bloque bloque1">
-                    <h2 id="git">Git</h2>
-                    <br>
-                    <p>Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.</p>
-                    <br>
+    <div class="main-blog">
+                <br>
+                <br id="section1">
+                <br>
+                <br>
+                <div class="bloque1">
+                    <h2>Conocimientos básicos de git</h2>
+                    <p> Git es un software de control de versiones diseñado por Linus Torvalds, 
+                        pensando en la eficiencia, la confiabilidad y compatibilidad del 
+                        mantenimiento de versiones de aplicaciones cuando estas tienen 
+                        un gran número de archivos de código fuente.
+                    </p>
 
                     <li>Repositorio de git quiere decir que es local</li>
                     <li>Repositorio de GitHub quiere decir que es remoto</li>
                     <br>
-                    
-                    <span>
-                        <p><b>NOTA:</b> Estos comandos pueden ser ejecutados tanto como en el bash de git como en el terminal de <br>windows incluso en la terminal del IDE de preferencia…</p> 
-                        <br>
-                        <p>TENER EN CUENTA LOS PUNTOS DE LOS COMANDOS Y LOS GUIONES Y DOBLE GUIONES.</p>    
-                        <p>CUANDO ESTE HABLANDO DE COMMIT me refiero a los archivos que ya se subieron…</p> 
-                    </span>
 
+                    <div class="parrafo-con-autor">
+                        <b>Estos comandos pueden ser ejecutados tanto como en el bash de git 
+                            como en el terminal de windows incluso en la terminal del IDE de preferencia.
+                        </b> 
+                        <br>
+                        <br>
+                        <p><b>-</b> Jonathan Montero, CEO & Full-Stack</p> 
+                    </div>
                     <br>
-                    
-                    <h3>Algunos comandos de configuración</h3>
+
+                    <div>
+                        <p>Tener en cuenta los puntos de los comandos y los guiones y 
+                            guion doble para garantizar el buen manejo de git debes 
+                            prestas mucha atencion a esos aspectos.
+                        </p>    
+                        <p>Cuando se habla de commit se refiere a los archivos que 
+                            ya se subieron al repositorio local.
+                        </p> 
+                    </div>
+                    <br>
+                    <br id="section2">
+                    <br>
+                    <br>
+                    <h2>Algunos comandos de configuración</h2>
                     <ul>
                         <li><span>git config –global user.email “aqui pongo mi email”</></li>
                         <li><span>git config –global user.name “aquí pongo el username que quiero”</></li>
@@ -79,165 +95,350 @@
                         <li><span>touch + nombre </span> Para crear archivos</li>
                         <li><span>code + nombre_archivo </span> abre este archivo</li>
                     </ul>
-
-                    <span>
-                        NOTA: RECORDAR SIEMPRE MOVERTE PRIMERO AL DIRECTORIO QUE QUIERES HACER LA
-                        SIGUIENTES ACCCIONES YA SEA CREAR BORRAR ETC….
-                    </span>
                     <br>
-                    <br>
-                    <h3>Cosas</h3>
-                    <p><span style=color:red;>control + L</span> limpiar consola o también escribir <span style=color:red;>clear</span></p>
 
-                
+                    <div class="parrafo-con-autor">
+                        <b> Recordar siempre moverte primero al directorio que quieres 
+                            hacer las siguientes acciones ya sea crear o borrar.
+                        </b> 
+                        <br>
+                        <br>
+                        <p><b>-</b> Jonathan Montero, CEO & Full-Stack</p> 
+                    </div>
+                    <br>
                 </div>
 
-                <div class="bloque bloque2">
-                    <h3 id="github">Comandos importantes GIT</h3>
+                <div class="bloque2">
+                    <br>
+                    <br id="section3">
+                    <br>
+                    <br>
+                    <h2>Comandos importantes de git</h2>
                     <ul>
-                        <li><span style=color:red;>git init</span> para iniciar repositorio local ------ importante este comando
-                            este por lo general lo inicias dentro de la carpeta de tu proyecto…
+                        <li><b>git init</b> para iniciar repositorio local.
+                        <p><b style="color: green;">Importante: </b>este comando este por lo general lo inicias dentro de la 
+                            carpeta de tu proyecto.</p>
                         </li>
-                        <li><span style=color:red;>git status</span> para saber los estados de los archivos AQUÍ PUEDES VER QUE
-                            ARCHIVOS
-                            ESTAN LISTOS PARA SUBIR Y CUALES NO también puedes ver que archivos se modificaron etc.….
+                        <li><b>git status</b> para saber los estados de los archivos 
+                            <p>Aqui puedes ver que archivos estan listos para subir y cuales no, también puedes ver que 
+                                archivos se modificaron etc.</p>
                         </li>
-                        <h4>¡¡¡¡AQUÍ PREPARANDO LA COMIDA!!!! ¡¡¡PREPARANDO ARCHIVOS!!! ESTOS 2 COMANDO SIGUIENTES</h4>
-                        <li><span style=color:red;>git add + nombre DE ARCHIVO</span> para agregar el archivo OJO ESTE COMANDO NO
-                            VA SUBIR EL ARCHIVO AUN SOLO LO PREPARA
+                        <h4>¡¡¡¡AQUÍ PREPARANDO LA COMIDA!!!! ¡¡¡PREPARANDO ARCHIVOS!!! ESTOS 2 COMANDOs SIGUIENTES</h4>
+                        <li><b>git add + nombre DE ARCHIVO</b> para agregar el archivo 
+                            <p>Para agregar el archivo OJO ESTE COMANDO NO VA SUBIR 
+                                EL ARCHIVO AUN SOLO LO PREPARA
+                            </p>
                         </li>
-                        <li><span style=color:red;>git add .</span> para subir todos los archivos juntos OJO ESTE COMANDO NO VA
-                            SUBIR lOS ARCHIVOS AUN SOLO LOS PREPARA
+                        <li><b>git add .</b> para subir todos los archivos juntos 
+                            <p>OJO ESTE COMANDO NO VA SUBIR lOS ARCHIVOS
+                                 AUN SOLO LOS PREPARA
+                            </p> 
                         </li>
                         <h4>AQUÍ YA SI TA LISTA PARA COMERMELA……. COMANDO SIGUIENTE SUBIENDO ARCHIVOS</h4>
-                        <li> <span style=color:red;>git commit -m “aquí pones alguna descripción del cambio que has hecho es
+                        <li><b>git commit -m</b> “aquí pones alguna descripción del cambio que has hecho es
                             opcional, pero es recomendado para indicarle a
                             tus compañeros de trabajo los cambios que has realizado”</span></li>
                         <br>
                         <span>Este comando ya empaqueta todos los archivos PREPARADOS para subir y los envía al repositorio local.</span>
+                        <br>
                         <span>Nota: un dato importante cada cambio que hagamos a ese archivo ya subido en el repositorio
                             Debemos volver hacer un commit para actualizar esos cambios que hicimos.
                         </span>
 
                     </ul>
 
-                    <pre>
-                        <p>Ojo: <br>ESTE COMANDO ES PARA LA GENTE LOCA QUE HACE DESASTRE TRANQUILO VENGO A SALVARLOS <br>SI USTEDES HACEN UN CAMBIO Y DICEN WAOO ME EQUIVOQUE QUIERO VOLVER AL PASADO...</p>
-                    </pre>
-
-                    <span style=color:red;>git checkout .</span>  este comando lo que va hacer es un rollback ósea el ultimo commit…..
+ 
+                    <p>
+                        Ojo: Este comando es para la gente loca que hace desastre, tranquilo vengo a salvarlos.
+                        Si ustedes hacen un cambio y dicen WAOO!! me equivoque quiero volver al pasado.
+                    </p>
+    
+                    <span><b>git checkout </b></span>  este comando lo que va hacer es un rollback ósea el ultimo commit…..
                     ese último cambio que subiste va desaparecer.
+                    <br>
+                    <br>
 
-                    <span style=color:red;>git log</span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
+                    <span><b>git log</b></span> este es un comando para ver los cambios realizados te dice quien lo hizo ese cambio, la fecha
                     para saber quién fue el criminal que jodio la vaina.
 
                     Un dato hay una forma de acceder al commit de otra persona o a tu propio commit que hiciste en el pasado etc
-                    Primero ejecutas el  <span style=color:red;>git log</span> y veras al lado de la palabra ‘commit’ un texto largo con números y letras lo copias
-                    luego ejecutas  <span style=color:red;>git checkout</span> + el texto que copiaste y guala estarás en ese commit….
+                    Primero ejecutas el  <b>git log</b> y veras al lado de la palabra ‘commit’ un texto largo con números y letras lo copias
+                    luego ejecutas <b>git checkout</b> + el texto que copiaste y guala estarás en ese commit….
+                    <br>
+                    <br>
 
-                    <span style=color:red;>git diff</span> este comando lo podemos usar cuando hacemos un cambio en el archivo que ya subimos por ejemplo que escribamos
+                    <b>git diff</b> este comando lo podemos usar cuando hacemos un cambio en el archivo que ya subimos por ejemplo que escribamos
                     una nueva línea de código con este comando nos dirá exactamente que escribimos
                     y donde.Hay algunos ide como pycharm que cada cambio que hagas el archivo
                     cambia de color azul indicándote que estas modificando este archivo.
+                    <br>
+                    <br>
 
-                    <span style=color:red;>git reset HEAD + NOMBRE DE ARCHIVO </span>    este comando nos permite quitar un archivo de
+                    <b>git reset HEAD + NOMBRE DE ARCHIVO </b>    este comando nos permite quitar un archivo de
                     la preparación OJO ósea quita un archivo de los archivos que están esperando SER
                     comidos no de lo que ya están en la barriga….
                     <br>
                     <br>
-                    <span>
-                        <h2>Datos importantes GITHUB</h2>
-                        <br>
+                    <br id="section4">
+                    <br>
+                    <br>
+                    <h2>Datos importantes github</h2>
+        
+                    <p><b>Pull Request</b> quiere decir cuando alguien que no esta en tu grupo de colaboracion
+                    quiere participar o agregar o modificar algo y luego se decide o no si esos cambios que hizo esa
+                    persona quiero aceptarlos.
+                    </p>
 
-                        <p><span>Pull Request</span> quiere decir cuando alguien que no esta en tu grupo de colaboracion
-                        quiere participar o agregar o modificar algo y luego se decide o no si esos cambios que hizo esa
-                        persona quiero aceptarlos.</p>
-
-                        <span>Fork</span> quiere decir que vas hacer una copia de un repositorio por ejemplo de otra persona
+                    <p>
+                        <b>Fork</b> quiere decir que vas hacer una copia de un repositorio por ejemplo de otra persona
                         y quieres experimentar con esa informacion ojo los cambios que hagas en esa copia no se
                         va modificar en la original de esa persona a menos que hagas un pull request y esperes su aprobacion.
+                    </p>
+                    <br>
 
-                        <span>Nota: Podemos crear un archivo llamado .gitignore y aqui espeficar los nombres
-                            de los archivos que no quiero subir a github esto es importante ya que hay veces
+                    <span><b>Nota: </b>Podemos crear un archivo llamado .gitignore y aqui espeficar los nombres
+                        de los archivos que no quiero subir a github esto es importante ya que hay veces
                         que vamos a querer no subir archivos con informacion privadas ya sea api keys etc...
-                        normalmente cuando creas un repositorio en el proyecto se crea un archivo gitignore</span>
-
-                        <li>Recordar hacer una cuenta en GitHub</li>
-                        <li>Luego pueden darle a new para crear repositorio</li>
-                        <li>Cada repositorio tiene una dirección especifica que utilizaremos para sincronizar el repositorio local con el remoto parecida a esta</li>
-                        <li>https://github.com/nombreusario/nombrerepositorio.git</li>    
-
-                        <br>
-                        <h2>También podemos hacer un repositorio desde la consola</h2>
-                        <br>
+                        normalmente cuando creas un repositorio en el proyecto se crea un archivo gitignore.
+                    </span>
 
                         <ol>
+                            <li>Recordar hacer una cuenta en GitHub</li>
+                            <li>Luego pueden darle a new para crear repositorio</li>
+                            <li>Cada repositorio tiene una dirección especifica que utilizaremos para sincronizar el repositorio local con el remoto parecida a esta</li>
+                            <li>https://github.com/nombreusario/nombrerepositorio.git</li>  
+                        </ol>
+                        <br>
+
+                        <h3>También podemos hacer un repositorio desde la consola</h3>
+            
+                        <ol>
                             <li>Creamos el repositorio <span>git init</span></li>
-                            <br>
                             <li>Agregamos los archivos que queramos, por ejemplo<span>git add README.md</span></li>
-                            <br>
                             <li>Hacemos comit <span>git comit -m “primer comit”</span></li>
-                            <br>
                             <li><span>git remote add origin https://github.com/nombreusario/nombrerepositorio.git</li>
-                            <br>
-                        
-                            <p>origin puede ser cualquier cosa pueden darle su propio nombre es como si le estuvieramos dando un nombre al repositorio local.</p> 
-                            <br>
                             <li><span>git push -u origin master</li>
                             <br>
                         </ol>
-
+                        <p><b>origin </b>puede ser cualquier cosa pueden darle su propio nombre es 
+                            como si le estuvieramos dando un nombre al repositorio local.
+                        </p> 
                         <br>
-                        <h2 id="ramas">Ramas o Branch</h2>
+                        <br id="section5">
                         <br>
-                        <p>Una rama Git es simplemente un apuntador móvil apuntando a una de esas confirmaciones. La rama por defecto de Git es la rama master . Con la primera confirmación de cambios que realicemos, se creará esta rama principal master apuntando a dicha confirmación.</p>
                         <br>
-                        <p>Rama o branch la principal es la master, pero también le podemos cambiar el nombre</p>
                         <br>
+                        <h2>Ramas o Branch</h2>
+                        <p>Una rama Git es simplemente un apuntador móvil apuntando a una de esas confirmaciones. La rama por defecto de Git es la rama master . 
+                            Con la primera confirmación de cambios que realicemos, se creará esta rama principal master apuntando a dicha confirmación.
+                        </p>
+                        <p>Rama o branch la principal es la master, pero también le podemos cambiar el nombre.</p>
 
                         <ul>
-                            <li><span>git branch</span> Para saber los tipos de ramas o Branch que tenemos
-                        los Branch son prácticamente como una carpeta padre donde contiene los archivos de un proyecto</li>
-                            <li><span>git branch + nombre </span> Crea un nuevo branch o rama.</li>
-                            <li><span>git checkout + nombre </span> Accedo a esa rama.</li>
-                            <li><span>ls</span> para ver los archivos que tiene esa rama.</li>
-                            <li><span>git merge + nombre de ese branch</span> para fucionar la rama activa con la deseada.</li>
-                            <li><span>git branch -d + nombre de ese branch</span> elimina el branch especifico.</li>
+                            <li><b>git branch</b> Para saber los tipos de ramas o Branch que tenemos los Branch son prácticamente como una carpeta padre donde contiene los archivos de un proyecto</li>
+                            <li><b>git branch + nombre </b> Crea un nuevo branch o rama.</li>
+                            <li><b>git checkout + nombre </b> Accedo a esa rama.</li>
+                            <li><b>ls</b> para ver los archivos que tiene esa rama.</li>
+                            <li><b>git merge + nombre de ese branch</b> para fucionar la rama activa con la deseada.</li>
+                            <li><b>git branch -d + nombre de ese branch</b> elimina el branch especifico.</li>
                         </ul>
-                        
-                    </span>
+                        <br>
 
-                    <pre>
-                        <h4>PASOS PARA HACER PUSH desde el repositorio local al remoto DESDE EL COMAND LINE</h4>
-                        <p>Ojo este paso es si ya tenemos creado el repositorio y con sus archivos listos para subir</p>
+                        <b>
+                            ➭ Pasos para hacer push desde el repositorio local al remoto desde el command line (Linea de comandos).
+                        </b>
+                        <p>
+                           <b>Ojo: </b>este paso es si ya tenemos creado el repositorio y con sus archivos listos para subir
+                        </p>
 
-                        <p><span>git remote add origin https://github.com/nombreusuario/nombrerepositorio.git</span><br>Aquí ya estamos sincronizando con el repositorio remoto</p> 
-                        <p>NOTA: les saldrá una ventana para verificar que eres tú. <br><span>git Branch -M main</span> 
-                        <p><span>git push -u origin main -f</span></p>
-                        <p>aquí ya estamos diciendo ok ya envía mi repositorio local al remoto</p>
-                        <p>A veces tendremos que forzar el push aunque no es recomendado con -f</p>
-                            
-                    </pre>
-
+                        <p>git remote add origin https://github.com/nombreusuario/nombrerepositorio.git</p>
                     
-                    <h3>Pull</h3>
-                    <p><span>git pull origin main</span> para traer los cambios realizados que se hicieron en el repositorio o en github.</p>
-
+                        <p>
+                           Aquí ya estamos sincronizando con el repositorio remoto</p> 
+                        </p>
+                        <p><b>NOTA: </b>les saldrá una ventana para verificar que eres tú.</p>
+                            
+                        <p><b>git Branch -M main</b></p> 
+                        <p><b>git push -u origin main -f</b></p>
+                        <p>Aquí ya estamos diciendo ok ya envía mi repositorio local al remoto</p>
+                        <p>A veces tendremos que forzar el push aunque no es recomendado con -f</p>
+         
+                    <p><b>git pull origin main</b> para traer los cambios realizados que se hicieron en el repositorio o en github.</p>
                 </div>
+            </div>
 
-            </article>
-        </div>
-    </div>
-
-    <aside class="aside">
-        <ul>
-            <li><a href="#section1">Conocimientos básicos de git</a></li>
-            <li><a href="#section2">Algunos comandos de configuración</a></li>
-            <li><a href="#section3">Comandos importantes de git</a></li>
-            <li><a href="#section4">Datos importantes github</a></li>
-            <li><a href="#section5">Pasos para push local & remoto</a></li>
-        </ul>
-    </aside>
+            <aside class="aside-blog">
+                <ul>
+                    <li><a href="#section1">Conocimientos básicos de git</a></li>
+                    <li><a href="#section2">Algunos comandos de configuración</a></li>
+                    <li><a href="#section3">Comandos importantes de git</a></li>
+                    <li><a href="#section4">Datos importantes github</a></li>
+                    <li><a href="#section5">Ramas o branch</a></li>
+                </ul>
+            </aside>
 </div>
+
+<br>
+<div class="separador"></div>
+<br>
+
+<div class="post-recientes">
+    <h2>Nuestros post mas recientes</h2>
+
+    <div class="cont-postRecientes">
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="{% static 'GrupoSoftware/css/images/320x300.png' %}" alt="post imagen">
+            <div class="info">
+                <p><a href="#">Jonathan M.</a> 10 julio 2022</p>
+                <h4>
+                    <a class="titulo-post" href="">
+                        A small business is only as good as its 
+                        tools and it is totally true.
+                    </a>
+                </h4>
+                <div class="tag">
+                    Tecnologia
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
 
 {% endblock %}
