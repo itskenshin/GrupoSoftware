@@ -9,10 +9,10 @@ body {
   grid-template-columns: 500px 1fr;
   grid-template-areas: "head head" "aside main";
 }
-.contenedorBlog header {
+.contenedorBlog .header-blog {
   grid-area: head;
 }
-.contenedorBlog .header-blog {
+.contenedorBlog .divHeader-blog {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -23,31 +23,31 @@ body {
   gap: 20px;
   justify-content: center;
 }
-.contenedorBlog .header-blog .info-blog {
+.contenedorBlog .divHeader-blog .info-blog {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   width: 40%;
 }
-.contenedorBlog .header-blog .info-blog div {
+.contenedorBlog .divHeader-blog .info-blog div {
   margin-top: 10px;
 }
-.contenedorBlog .header-blog .info-blog .principal-blog .tag {
+.contenedorBlog .divHeader-blog .info-blog .principal-blog .tag {
   background-color: #d1f8df;
   display: inline-block;
   border-radius: 10px;
   padding: 5px;
 }
-.contenedorBlog .header-blog .info-blog .principal-blog .fecha {
+.contenedorBlog .divHeader-blog .info-blog .principal-blog .fecha {
   margin-top: 20px;
   color: green;
 }
-.contenedorBlog .header-blog .info-blog .autor {
+.contenedorBlog .divHeader-blog .info-blog .autor {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.contenedorBlog .header-blog .info-blog .autor .nombre-autor {
+.contenedorBlog .divHeader-blog .info-blog .autor .nombre-autor {
   display: flex;
   flex-direction: column;
 }
