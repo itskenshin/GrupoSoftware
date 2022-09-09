@@ -4,20 +4,43 @@
 
 {% block content %}
 
-    <header>
-        <!-- Menu de navegacion -->
-        <nav class="header-menu">
-            <a href="{% url 'Main' %}"><img src="{% static 'GrupoSoftware/css/images/group_icon.png' %}" alt="GrupoSoftware icon"></a>
-            <h1>Grupo Software ITLA</h1>  
+<div class="contenedorBlog">
+    <div class="header-blog">
+        <div class="divHeader-blog">
+            <div class="imagen-blog">
+                <img src="{% static 'GrupoSoftware/css/images/Git-Github.png' %}">
+            </div>
+            <div class="info-blog">
+                <div class="principal-blog">
+                    <div class="tag">
+                        Tecnologia
+                    </div>
+                    <div class="fecha">
+                        Jonathan Montero • 1 de Julio de 2021 a las 22:03
+                    </div>
+                    <div class="titulo-blog">
+                        <h1>Consejos para una mejor comprension del manejo de git y github</h1>  
+                        <p>
+                            Podras aprender a manejar git y github de manera basica...
+                        </p>
+                    </div>
+                </div>
+               
+                <div class="autor">
+                    <div class="imagen-autor">
+                        <img src="{% static 'GrupoSoftware/css/images/contributors/Jonathan pic.png' %}" alt="">
+                    </div>
+                    <div class="nombre-autor">
+                        <b>Jonathan Montero</b> 
+                        CEO & Full-Stack
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </nav>
-
-    </header>
-
-    <main>
-
+    <div class="main">
         <div class="contenedor-principal">
-
             <article>
                 <h1 class="principal-title">Git / Github <img width="50" align="absmiddle" src="{% static 'GrupoSoftware/css/images/git.png'%}" alt="Git"> </h1>
 
@@ -203,31 +226,18 @@
                 </div>
 
             </article>
-            
-            <!-- aside con el indice -->
-            <aside class="aside-class" style="width: 20%; display: inline-block;">
-
-                <h3>Indice</h3>
-                <br>
-                <ul>
-                    <li><a href="#git">Git</a></li>
-                    <li><a href="#github">Datos importante de GITHUB</a></li>
-                    <li><a href="#ramas">Ramas o Branch</a></li>
-                </ul>
-                
-
-            </aside>
-
         </div>
+    </div>
 
-
-    </main>
-
-    <footer>
-        <span>Hecho por el grupo de software</span>
-        <img src="#" alt="#">
-
-        ITLA
-    </footer>
+    <aside class="aside">
+        <ul>
+            <li><a href="#section1">Conocimientos básicos de git</a></li>
+            <li><a href="#section2">Algunos comandos de configuración</a></li>
+            <li><a href="#section3">Comandos importantes de git</a></li>
+            <li><a href="#section4">Datos importantes github</a></li>
+            <li><a href="#section5">Pasos para push local & remoto</a></li>
+        </ul>
+    </aside>
+</div>
 
 {% endblock %}

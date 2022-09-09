@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+}
+
+.contenedorBlog {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-areas: "head head" "aside main";
+}
+.contenedorBlog .header-blog {
+  grid-area: head;
+}
+.contenedorBlog .divHeader-blog {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 34px;
+  display: flex;
+  padding: 4rem;
+  gap: 20px;
+  justify-content: center;
+}
+.contenedorBlog .divHeader-blog .info-blog {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 40%;
+}
+.contenedorBlog .divHeader-blog .info-blog div {
+  margin-top: 10px;
+}
+.contenedorBlog .divHeader-blog .info-blog .principal-blog .tag {
+  background-color: #d1f8df;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+}
+.contenedorBlog .divHeader-blog .info-blog .principal-blog .fecha {
+  margin-top: 20px;
+  color: green;
+}
+.contenedorBlog .divHeader-blog .info-blog .autor {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contenedorBlog .divHeader-blog .info-blog .autor .nombre-autor {
+  display: flex;
+  flex-direction: column;
+}
+.contenedorBlog .aside {
+  grid-area: aside;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 410px;
+  margin: 80px 100px 0px 100px;
+  top: 100px;
+  z-index: 2;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 190px 20px;
+}
+.contenedorBlog .aside a {
+  text-decoration: none;
+  color: black;
+}
+.contenedorBlog .aside h3 {
+  text-align: center;
+  color: rgb(49, 49, 49);
+}
+.contenedorBlog .aside h3 :hover {
+  color: rgb(0, 0, 0);
+  transition: all 400ms;
+}
+.contenedorBlog .aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+.contenedorBlog .aside ul li {
+  padding: 10px;
+}
+.contenedorBlog .aside ul li :hover {
+  background-color: #979797;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  margin: 0px 2px 0px 2px;
+  transition: all 400ms;
+}
+.contenedorBlog .contenedor-principal {
+  grid-area: main;
+}/*# sourceMappingURL=Git-Github.css.map */
