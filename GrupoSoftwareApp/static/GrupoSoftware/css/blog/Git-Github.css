@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 .contenedorBlog {
   display: grid;
   grid-template-columns: 500px 1fr;
@@ -74,7 +78,7 @@
 }
 .contenedorBlog .main-blog {
   grid-area: main-blog;
-  padding: 40px;
+  padding: 0px 40px;
   display: flex;
   min-width: 400px;
   flex-direction: column;

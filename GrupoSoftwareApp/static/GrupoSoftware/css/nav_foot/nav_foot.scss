@@ -40,8 +40,13 @@ header{
 
         a {
             text-decoration: none;
-            color: white;
+            color: #8896AB;
           }
+
+        a:hover {
+            text-decoration: none;
+            color: #fefefe;
+        }
 
         li {
             display: flex;
@@ -54,34 +59,30 @@ header{
         }
 
         li:hover {
-            background-color: rgba(160, 93, 248, 0.356);
             padding: 14px 20px;
         }
     }
 }
 
 .navbar-fixed{
-    height: 100px;
+    height: 90px;
     position: fixed;
     top: 0px;
     transition: all 600ms;
     z-index: 2;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.89);
 
     img{
         display: block;
+        width: 80px;
         transition: all 600ms;
     }
 }
   
 .navbar .active {
-    background-color: #a15df8;
     border-radius: 5px;
     box-sizing: border-box;
-
-    a {
-        color: white;
-    }
+    color: rgb(255, 255, 255);
 }
 
 .navbar .active :hover {
