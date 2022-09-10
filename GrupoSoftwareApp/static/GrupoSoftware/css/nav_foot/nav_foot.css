@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 header {
   background-image: url("headerImg.png");
-  background-color: black;
+  background-color: rgba(255, 0, 0, 0);
   height: 320px;
-  gap: 30px;
+  gap: 10px;
 }
 
 .navbar {

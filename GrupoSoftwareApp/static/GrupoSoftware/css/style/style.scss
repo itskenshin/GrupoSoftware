@@ -13,78 +13,26 @@ $red: #c11fd6;
     align-items: center;
 }
 
-//-----------------------------Contenedor principal de las noticias
+//Contenedor principal de las noticias
 .content {
     width: 70vw;
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
     position: relative;
+    font-family: 'poppins';
 
-    .cont-noticia, .cont-publicaciones {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 54px;
-        width: 100%;
-        box-sizing: border-box;
-
-        //Contenedor del titulo y descripcion de la noticia del slide
-        .titulo {
-            color: white;
-            top: 390px;
-            left: 190px;
-
-            p {
-            font-size: 14px;
-            font-weight: 400;
-            margin: 0;
-            }
-
-            h3 {
-            margin: 0;
-            }
-        }
-    }
-
-    //--------------------------Contenedor de las noticias (slide)
-    .cont-noticia {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 5px;
-
-        img {
-            width: 100%;
-        }
-
-        h3,p{
-            position: absolute;
-            text-shadow: 0px 0px 2px black;
-            color: white;
-            left: 20px;
-        }
-
-        h3{
-            position: absolute;
-            bottom: 30px;
-        }
-
-        p{
-            position: absolute;
-            margin: 0px;
-            bottom: 10px;
-        }
-    }
-
-    //-----------------------Contenedor de todas las publicaciones
+    //Contenedor de todas las publicaciones
     .cont-publicaciones {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
         gap: 30px;
         padding: 20px 0px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        width: 100%;
+        box-sizing: border-box;
 
         //Contenedores que estan dentro del div de publicaciones
         .caja {
@@ -92,9 +40,20 @@ $red: #c11fd6;
             display: flex;
             flex-direction: column;
             font-weight: 400;
-            border-radius: 5px;
+            border-radius: 6px;
             line-height: 44px;
             background-color: white;
+            transition: all 600ms;
+            cursor: pointer;
+
+            .read{
+              font-size: 16px;
+              transition: all 600ms;
+            }
+
+            img{
+              border-radius: 6px;
+            }
 
             h4,p{
                 margin: 0px;
@@ -104,26 +63,38 @@ $red: #c11fd6;
             }
 
             h4{
-                font-size: 22px;
+                font-size: 19px;
+            }
+
+            p{
+                font-size: 16px;
+                color: rgb(66, 66, 66);
             }
 
             //Contenedor de informacion de la noticia, titulo y descripcion
-            .info { 
-                
-               background-color: black;
-               color: white;
-               padding: 10px;
-               height: 75px;
-               border-bottom-right-radius: 5px;
-               border-bottom-left-radius: 5px;
+            .info {
+               color: rgb(0, 0, 0);
                
                //Link de el nombre del autor de la noticia o blog (isael diloche)
                a {
                 text-decoration: none;
-                color: #A3BCFF;
+                color: #000000;
                }
             }
         }
+    }
+
+    .caja:hover{
+      background-color: rgb(225, 225, 225);
+      border-radius: 6px;
+      padding: 10px;
+
+      .read{
+        background-color: #2cd369;
+        padding: 10px;
+        border-radius: 6px;
+        color: #ffffff;
+      }
     }
 }
 
@@ -132,7 +103,7 @@ $red: #c11fd6;
 .slider{
     width: auto;
     height: 500px;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
   }
   
@@ -168,7 +139,7 @@ $red: #c11fd6;
   }
   
   .manual-btn{
-    border: 2px solid #40d3dc;
+    border: 2px solid #000000;
     padding: 5px;
     border-radius: 15px;
     cursor: pointer;
@@ -180,7 +151,7 @@ $red: #c11fd6;
   }
   
   .manual-btn:hover{
-    background: #40d3dc;
+    background: #27dd6a;
   }
   
   #radio1:checked ~ .first{
@@ -210,10 +181,11 @@ $red: #c11fd6;
   }
   
   .navigation-auto div{
-    border: 2px solid #40d3dc;
+    border: none;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
+    background-color: black;
   }
   
   .navigation-auto div:not(:last-child){
@@ -221,7 +193,7 @@ $red: #c11fd6;
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #40d3dc ;
+    background: #27dd6a ;
   }
   #radio2:checked ~ .navigation-auto .auto-btn2 {
     background: #40d3dc ;
