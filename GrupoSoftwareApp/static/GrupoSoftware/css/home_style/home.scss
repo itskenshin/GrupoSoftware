@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+.cont{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 600px;
+    color: white;
+    font-family: 'poppins';
+    background: conic-gradient(from 180deg at 50% 50%, #1C0707 -129.37deg, #091520 60deg, #000000 148.13deg, #1C0707 230.62deg, #091520 420deg);
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .description{
+        position: absolute;
+        top: 120px;
+        width: 40%;
+        height: 200px;
+
+        strong{
+            color: #22C55E;
+        }
+
+        h1{
+            line-height: 50px;
+        }
+
+        p{
+            line-height: 30px;
+        }
+
+        .link{
+            background-color: #22C55E;
+            border-radius: 50px;
+            padding: 5px;
+            font-size: 14px;
+            width: 65px;
+            text-align: center;
+        }
+
+        .link:hover{
+            background-color: #27dd6a;
+            transition: all 600ms;
+        }
+    }
+
+    .logo_img{
+
+        img{
+            width: 100%;
+            opacity: 10%;
+        }
+    }
+}
+
+.home{
+    padding: 20PX 100PX;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    height: 600px;
+    gap: 20px;
+    box-sizing: border-box;
+
+    div{
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+
+    .projects{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-image: url(projects.png);
+        background-color: rgb(128, 128, 128);
+        position: relative;
+
+        h1{
+            position: absolute;
+            font-size: 40px;
+            font-family: 'poppins';
+            color: white;
+            transform: rotate(-90deg);
+            top: 130px;
+            left: 60px;
+        }
+    }
+
+    .contact{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background: linear-gradient(180deg, #2FA6CB 0%, #A3A3A3 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: white;
+            font-size: 25px;
+            font-family: 'poppins';
+        }
+    }
+
+    .GroupLogo{
+        grid-column: 3/5;
+        grid-row: 1/3;
+        background: conic-gradient(from 180deg at 50% 50%, #1C0707 -129.37deg, #091520 60deg, #000000 148.13deg, #1C0707 230.62deg, #091520 420deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        position: relative;
+        grid-column: 5/7;
+        grid-row: 1/3;
+
+        h1{
+            position: absolute;
+            font-family: 'poppins';
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        p{
+            position: absolute;
+            font-family: 'poppins';
+            top: 170px;
+            font-size: 18px;
+        }
+    }
+
+    .img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(image16.png);
+        background-color: rgb(128, 128, 128);
+    }
+
+    .team{
+        grid-column: 1/4;
+        grid-row: 3/3;
+        background-image: url(team.png);
+        background-color: rgb(128, 128, 128);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        h1{
+            font-size: 30px;
+            font-family: 'poppins';
+            color: white;
+        }
+    }
+
+    .text2{
+        grid-column: 3/5;
+        grid-row: 3/3;
+    }
+
+    .img2{
+        grid-column: 5/7;
+        grid-row: 3/3;
+        background-image: url(img2.png);
+        background-color: rgb(128, 128, 128);
+    }
+}

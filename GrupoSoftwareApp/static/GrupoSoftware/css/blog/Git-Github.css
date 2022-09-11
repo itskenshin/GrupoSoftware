@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.contenedorBlog {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-areas: "head head" "aside main-blog";
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+}
+.contenedorBlog .header-blog {
+  grid-area: head;
+}
+.contenedorBlog .divHeader-blog {
+  display: flex;
+  padding: 4rem;
+  gap: 20px;
+  justify-content: center;
+}
+.contenedorBlog .divHeader-blog .info-blog {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.contenedorBlog .divHeader-blog .info-blog div {
+  margin-top: 10px;
+}
+.contenedorBlog .divHeader-blog .info-blog .principal-blog .fecha {
+  margin-top: 20px;
+  color: green;
+}
+.contenedorBlog .divHeader-blog .info-blog .autor {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contenedorBlog .divHeader-blog .info-blog .autor .nombre-autor {
+  display: flex;
+  flex-direction: column;
+}
+.contenedorBlog .aside-blog {
+  grid-area: aside;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 410px;
+  margin: 80px 100px 0px 100px;
+  top: 200px;
+  z-index: 2;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 190px 20px;
+}
+.contenedorBlog .aside-blog a {
+  text-decoration: none;
+  color: black;
+}
+.contenedorBlog .aside-blog ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+.contenedorBlog .aside-blog ul li {
+  padding: 10px;
+}
+.contenedorBlog .aside-blog ul li :hover {
+  color: blue;
+  transition: all 600ms;
+}
+.contenedorBlog .main-blog {
+  grid-area: main-blog;
+  padding: 0px 40px;
+  display: flex;
+  min-width: 400px;
+  flex-direction: column;
+}
+.contenedorBlog .main-blog .bloque1 {
+  display: flex;
+  flex-direction: column;
+}
+.contenedorBlog .main-blog .parrafo-con-autor {
+  padding: 0 10px;
+  border-left: 5px solid #22C55E;
+}
+
+.tag {
+  background-color: #d1f8df;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 5px;
+  color: green;
+}
+
+.post-recientes {
+  width: 90%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 24px;
+}
+.post-recientes h2 {
+  margin: 25px;
+  font-size: 30px;
+}
+.post-recientes img {
+  border-radius: 10px;
+}
+.post-recientes .cont-postRecientes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  color: black;
+  padding: 40px;
+}
+.post-recientes .cont-postRecientes .post {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  border-radius: 10px;
+  line-height: 34px;
+}
+.post-recientes .cont-postRecientes .post h4, .post-recientes .cont-postRecientes .post p {
+  margin: 0px;
+}
+.post-recientes .cont-postRecientes .post .info {
+  padding: 10px;
+}
+.post-recientes .cont-postRecientes .post .info a {
+  text-decoration: none;
+  color: black;
+}
+
+.separador {
+  height: 1px;
+  border-radius: 20px;
+  background-color: black;
+  width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .divHeader-blog {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contenedorBlog {
+    grid-template-areas: "head head" "main-blog main-blog";
+  }
+  .contenedorBlog .aside-blog {
+    display: none;
+  }
+}/*# sourceMappingURL=Git-Github.css.map */
