@@ -25,7 +25,8 @@
 </br>
 
 
-# Se parte de los colaboradores
+
+## Se parte de los colaboradores
 si te interesa colaborar en  la estructura del sitio web para implementar mejorar o corregir algo puedes hacer lo siquiente.
 
 ### 1. Lo primero es hacer un fork del repositorio original en tu GitHub. <a href="https://desarrolloweb.com/articulos/fork-git">¿Como hacer un fork?</a>
@@ -39,3 +40,28 @@ cd GrupoSoftware
 ```
 
 Y listo, ya puedes ejecutar el proyecot en tu pc e ir implementando los cambios
+
+<br>
+
+## Créditos
+
+### Autor
+* ### Jonathan Montero <a href="https://github.com/itskenshin"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a> <a href="https://www.instagram.com/jonathanm0404"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
+ 
+### Contribuyentes
+Agradecemos a las siguientes personas por sus contribuciones al proyecto:
+
+* <p>Isael Diroche
+    <a href="https://github.com/itskenshin"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
+    <a href="https://www.instagram.com/_isael_diroche_"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
+ 
+* <p>Cristian Tejeda 
+    <a href="https://github.com/Tcriss"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
+    <a href="https://www.instagram.com/_tcriss_"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
+    <a href="https://www.linkedin.com/in/cristiant25"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
+ 
+* <p>Haroldy Martinez
+    <a href="https://github.com/HaroldMart"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
+    <a href="https://www.instagram.com/harol098g"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
+    <a href="https://www.linkedin.com/in/haroldy-martinez/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
+ 
