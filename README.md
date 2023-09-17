@@ -46,21 +46,22 @@ Y listo, ya puedes ejecutar el proyecot en tu pc e ir implementando los cambios
 ## Créditos
 
 ### Autor
-* ### Jonathan Montero <a href="https://github.com/itskenshin"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a> <a href="https://www.instagram.com/jonathanm0404"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
+* ### Jonathan Montero <br>
+    <a href="https://github.com/itskenshin"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a> <a href="https://www.instagram.com/jonathanm0404"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
  
 ### Contribuyentes
 Agradecemos a las siguientes personas por sus contribuciones al proyecto:
 
-* <p>Isael Diroche
+* Isael Diroche <br>
     <a href="https://github.com/itskenshin"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
     <a href="https://www.instagram.com/_isael_diroche_"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
  
-* <p>Cristian Tejeda 
+* Cristian Tejeda <br>
     <a href="https://github.com/Tcriss"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
     <a href="https://www.instagram.com/_tcriss_"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
     <a href="https://www.linkedin.com/in/cristiant25"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
  
-* <p>Haroldy Martinez
+* Haroldy Martinez <br>
     <a href="https://github.com/HaroldMart"><img src="https://img.shields.io/badge/Github-%231D0F00.svg?logo=github&logoColor=white"></a>
     <a href="https://www.instagram.com/harol098g"><img src="https://img.shields.io/badge/Instagram-%231D0F95.svg?logo=instagram&logoColor=white"></a>
     <a href="https://www.linkedin.com/in/haroldy-martinez/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"></a>
