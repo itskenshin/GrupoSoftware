@@ -1,7 +1,7 @@
 <p align="center">
     <img width="100px" src="./assets/img/GrupoSoftware Logo.png" align="center" alt="Isael Diroche" />
     <h2 align="center">GrupoSoftware Startup</h2>
-    <p align="center">¡Hola, bienvenido a mi perfil de GitHub! 👋</p>
+    <p align="center">¡Hola, bienvenido al Startup GrupoSoftware! 👋</p>
 </p>
 
 <p align="center">
@@ -20,8 +20,10 @@
     </a>
 </p>
 
+<img src="./assets/README/Captura de pantalla - Pagina Principal.png" alt="Captura de Pantalla">
+
 <h2 align="center">acerca del proyecto </h2>
-    <p align="center">¡Hola! Bienvenido al repositorio de la pagina de startup del GrupoSoftware nuestro plan es una marca sencilla de startup con programadores locales programadores dispuestos a aportar en tu idea o negocio como colaboradores en el ambito tecnologico, con mas de 2 años colaborando como equipo en la mayoria de proyectos estaremos ahí para colaborar contigo tambien.</p>
+    <p align="center"> Bienvenido al repositorio de la pagina de startup del GrupoSoftware nuestro plan es una marca sencilla de startup con programadores locales programadores dispuestos a aportar en tu idea o negocio como colaboradores en el ambito tecnologico, con mas de 2 años colaborando como equipo en la mayoria de proyectos estaremos ahí para colaborar contigo tambien.</p>
 </br>
 
 
