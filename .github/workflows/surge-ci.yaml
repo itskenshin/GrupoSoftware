@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - isael
 
 jobs:
   deploy:
@@ -12,10 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Build project
-        run: |
-          npm run build
 
       - name: Deploy to Surge
         run: |
