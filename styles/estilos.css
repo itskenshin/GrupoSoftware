@@ -547,4 +547,72 @@ main .banner-1 .item .stadistic p {
   letter-spacing: 0.1px;
   align-self: stretch;
   text-align: left;
+}
+main .section-4 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+main .section-4 ul.container {
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 50px;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+}
+main .section-4 ul.container li.item {
+  display: flex;
+  width: 100%;
+  min-width: 231px;
+  max-width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+main .section-4 ul.container li.item .image {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #D9F3FF;
+}
+main .section-4 ul.container li.item .cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+main .section-4 ul.container li.item .cont h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: #303B44;
+  text-overflow: ellipsis;
+  font-family: Sofia Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+main .section-4 ul.container li.item .cont p {
+  align-self: stretch;
+  color: #6A6A6A;
+  font-family: Krub;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }/*# sourceMappingURL=estilos.css.map */

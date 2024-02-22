@@ -352,7 +352,7 @@ main {
 
             // headline here
             .headline {
-                width: 100% !important;  
+                width: 100% !important;
             }
 
             ul.list-items {
@@ -413,7 +413,7 @@ main {
                             @include Krub-Body-B3();
                             font-weight: 300;
                             align-self: stretch;
-                            
+
                             @include small-screen() {
                                 text-align: center;
                             }
@@ -427,7 +427,7 @@ main {
             width: 100%;
             max-width: 588px;
             min-width: min(100%, 300px);
-            height: auto; 
+            height: auto;
         }
     }
 
@@ -456,7 +456,7 @@ main {
                     border-radius: 30px;
                     background: linear-gradient(219deg, #55A0E1 0%, #3B73E9 100%), var(--White, #FFF);
                 }
-                
+
                 p {
                     @include Krub-Body-B1();
                     align-self: center;
@@ -516,7 +516,7 @@ main {
                     &:hover {
                         .about-project {
                             height: 170px;
-                            transition: all 500ms ease-in-out;                            
+                            transition: all 500ms ease-in-out;
                         }
                     }
 
@@ -529,7 +529,7 @@ main {
                     .about-project {
                         position: absolute;
                         bottom: 0;
-                        
+
                         display: flex;
                         height: 78px;
                         padding: 12px 18px;
@@ -543,7 +543,7 @@ main {
                         background: rgba(255, 255, 255, 0.80);
                         transition: all 500ms ease-in-out;
                         backdrop-filter: blur(2px);
-                        
+
 
 
                         .heading {
@@ -631,10 +631,89 @@ main {
 
                 h1 {
                     color: #488AE6 !important;
-                    @include Sofia-Headline-H1B();                }
+                    @include Sofia-Headline-H1B();
+                }
 
                 p {
                     @include Krub-Body-B2();
+                }
+            }
+        }
+    }
+
+    .section-4 {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 50px;
+        align-self: stretch;
+        flex-wrap: wrap;
+
+        ul.container {
+            display: flex;
+            max-width: 600px;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 50px;
+            flex: 1 0 0;
+            flex-wrap: wrap;
+
+            li.item {
+                display: flex;
+                width: 100%;
+                min-width: 231px;
+                max-width: 360px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+
+                .image {
+                    display: flex;
+                    width: 80px;
+                    height: 80px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    border-radius: 6px;
+                    background: #D9F3FF;
+                }
+
+                .cont {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 6px;
+                    align-self: stretch;
+
+                    h4 {
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        align-self: stretch;
+
+                        overflow: hidden;
+                        color: #303B44;
+                        text-overflow: ellipsis;
+
+                        font-family: Sofia Sans;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 36px;
+                    }
+
+                    p {
+                        align-self: stretch;
+                        color: #6A6A6A;
+                        font-family: Krub;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                    }
                 }
             }
         }
