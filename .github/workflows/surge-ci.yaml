@@ -1,0 +1,24 @@
+name: Deploy to Surge
+
+on:
+  push:
+    branches:
+      - main
+      - isael
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Surge
+        run: |
+          npm install -g surge
+          surge --project . --domain grupo-software.surge.sh
+          echo "El proyecto se ha desplegado en el dominio: http://grupo-software.surge.sh"
+        env:
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
